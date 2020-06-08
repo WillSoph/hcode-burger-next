@@ -1,0 +1,130 @@
+footer {
+  height: 300px;
+  background-color: black;
+}
+.flex-footer {
+  display: flex;
+}
+.Logo-footer {
+  width: 25%;
+}
+
+.Logo-footer img {
+  width: 30%;
+  margin: 49px 0 0px 52px;
+}
+
+.Endereco h6 {
+  color: yellow;
+  font-size: 16pt;
+  margin-bottom: 0;
+}
+.Endereco p {
+  width: 38%;
+  color: white;
+}
+.Endereco {
+  text-align: justify;
+}
+.redes {
+  width: 25%;
+}
+.redes h6 {
+  color: yellow;
+  font-size: 16pt;
+  margin-bottom: 0;
+  margin-left: 12px;
+}
+
+.contato {
+  width: 25%;
+}
+.contato h6 {
+  color: yellow;
+  font-size: 16pt;
+  margin-bottom: 0;
+}
+.contato p {
+    color: white;
+}
+
+.net {
+  display: flex;
+}
+.net img {
+  margin: 15px;
+  width: 10%;
+}
+
+footer nav {
+  display: flex;
+}
+footer .menu-footer ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+.menu-footer li {
+  margin: 20px;
+}
+.menu-footer ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "h1";
+}
+footer nav p {
+  margin: 20px 199px;
+  width: 36%;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+
+footer{
+  height: auto;
+}
+
+.contato{
+  display: none;
+}
+.menu-footer{
+  display: none;
+}
+.redes{
+width: 100%;  
+text-align: center;
+}
+.Endereco
+{
+
+  text-align: center;
+}
+
+.Endereco p {
+  width: 80%;
+  color: white;
+  font-size: 10px;
+  margin: auto;
+}
+.Logo-footer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.Logo-footer img{
+    margin: 50px;
+}
+.flex-footer {
+  display: block;
+}
+.net{
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+}
+
+}
+@media (max-width: 640px) {
+
+    
+}

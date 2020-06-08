@@ -1,3 +1,156 @@
-.menu {
-    font-size: 2vw;
+@font-face {
+  font-family: "h1";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "light";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+/* * {
+  box-sizing: border-box;
+  padding: 0%;
+} */
+/* .body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  width: 40%;
+}
+.menu li {
+  margin: 20px;
+}
+.menu ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "h1";
+}
+
+.menu ul a:hover{
+  color: red;
+}
+.menu img {
+  width: 40px;
+  
+}
+
+.net-nav{
+  display: flex;
+}
+.net-nav a{
+  margin: 15px;
+  width: 12%;
+}
+.redes-nav{
+  width: 25%;
+}
+.logo{
+  margin: 0px 260px 0px 77px;
+}
+.logo img{
+  width: 100px;
+}
+.logo img:hover{
+  color: red;
+}
+.facebook:hover{
+  background-color: blue;
+  border-radius: 40px;
+}
+.whatsapp:hover{
+  background-color: green;
+  border-radius: 40px;
+}
+.Instagram:hover{
+ background-color: #be3c96;
+  border-radius: 40px;
+}
+.Twitter:hover{
+  background-color: #32ceff;
+  border-radius: 40px;
+}
+#menu-mobile,
+.x{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+
+
+  #menu-mobile{
+    display: block;
+  }
+  .x{
+    display: block;
+    text-align: end;
+  }    
+  .net-nav{
+    display: none;
+  }
+  .redes-nav{
+    display: none;
+  }
+
+  .logo{
+    margin: auto 0 0 10%;
+    width: 90%;
+
+  }
+ 
+.menu li a{
+display: block;
+margin: 35px;
+
+}
+
+.menu ul {
+display: block;
+position: fixed;
+top: 0;
+right: 0;
+width: 80vw;
+height: 100vh;
+background-color: white;
+z-index: 2;
+margin: 0;
+transition: right .2s ;
+text-align: center;
+}
+
+.menu ul{
+right: -80vw;
+}
+.menu a {
+color: blue;
+display: block;
+z-index: 3;
+}
+
+}
+
+@media (max-width: 640px) {
+
+  
+  .logo img{
+    width: 30%;
+    margin: auto;
+  }
+}
+@media (max-width: 1000px) {
+
+  .logo{
+    text-align: center;
+  }
+
+ 
 }

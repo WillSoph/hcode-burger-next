@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "h1";
+    src: url(../hcode-burger/fonts/Montserrat/Montserrat-Medium.ttf);
+  }
+  @font-face {
+    font-family: "light";
+    src: url(../hcode-burger/fonts/Montserrat/Montserrat-Light.ttf);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .menu{
+    display: flex;
+    justify-content: space-between;
+  }
+  header .menu ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    width: 40%;
+  }
+  .menu li {
+    margin: 20px;
+  }
+  .menu ul a {
+    color: white;
+    text-decoration: none;
+    font-family: "h1";
+  }
+  .menu img {
+    width: 40px;
+    margin-left: 15%;
+  }
+  
+  .net-nav{
+    display: flex;
+  }
+  .net-nav a{
+    margin: 15px;
+    width: 10%;
+  }
+  .redes-nav{
+    width: 25%;
+  }
+  .logo{
+    margin: 0px 260px 0px 77px;
+  }
+  .logo img{
+    width: 100px;
+  }
+
+  @media (max-width: 1200px) {
+
+    .net-nav{
+      display: none;
+    }
+    .menu ul li{
+      display:none;   
+    }
+  }
