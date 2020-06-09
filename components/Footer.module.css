@@ -14,6 +14,22 @@
     width: 30%;
     margin: 49px 0 0px 52px;
   }
+  .facebook:hover{
+    background-color: blue;
+    border-radius: 40px;
+  }
+  .whatsapp:hover{
+    background-color: green;
+    border-radius: 40px;
+  }
+  .Instagram:hover{
+   background-color: #be3c96;
+    border-radius: 40px;
+  }
+  .Twitter:hover{
+    background-color: #32ceff;
+    border-radius: 40px;
+  }
   
   .Endereco h6 {
     color: yellow;

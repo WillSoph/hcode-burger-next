@@ -35,10 +35,10 @@ export default function Header(props) {
                     </div>
                     <div className={styles['redes-nav']}>
                         <div className={styles['net-nav']}>
-                            <a href=""> <img src="assets/images/003-whatsapp.svg" className="whatsapp" alt="Whatsapp" /></a>
-                            <a href=""> <img src="assets/images/001-facebook.svg" className="facebook" alt="Facebook" /></a>
-                            <a href=""> <img src="assets/images/011-instagram.svg" className="Instagram" alt="Instagram" /></a>
-                            <a href=""> <img src="assets/images/013-twitter-1.svg" className="Twitter" alt="Twitter" /></a>
+                            <a href=""> <img src="assets/images/003-whatsapp.svg" className={styles.whatsapp} alt="Whatsapp" /></a>
+                            <a href=""> <img src="assets/images/001-facebook.svg" className={styles.facebook} alt="Facebook" /></a>
+                            <a href=""> <img src="assets/images/011-instagram.svg" className={styles.Instagram} alt="Instagram" /></a>
+                            <a href=""> <img src="assets/images/013-twitter-1.svg" className={styles.Twitter} alt="Twitter" /></a>
                         </div>
                     </div>
                     <div>
