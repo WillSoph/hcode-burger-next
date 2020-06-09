@@ -4,6 +4,7 @@
   }
   .flex-footer {
     display: flex;
+    
   }
   .Logo-footer {
     width: 25%;
@@ -25,9 +26,11 @@
   }
   .Endereco {
     text-align: justify;
+    padding-top: 50px;
   }
   .redes {
     width: 25%;
+    padding-top: 50px;
   }
   .redes h6 {
     color: yellow;
@@ -38,6 +41,7 @@
   
   .contato {
     width: 25%;
+    padding-top: 50px;
   }
   .contato h6 {
     color: yellow;

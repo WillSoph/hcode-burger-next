@@ -3,16 +3,7 @@
   padding: 0%;
   margin: 0;
 }
-header {
-  background-image: url(../public/assets/images/background-index-banner-mobile.png);
-  height: 800px;
-}
-h1 {
-  color: #e83c2e;
-  font-family: "h1";
-  margin: 0;
-  font-size: 65pt;
-}
+
 hr {
   height: 5px;
   width: 35%;
@@ -122,7 +113,7 @@ section {
   background-image: url(../public/assets/images/background-merged-black.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 710px;
+  height: 813px;
 }
 .amostra {
   width: 100%;
@@ -176,7 +167,7 @@ section {
 }
 .Pao {
   position: relative;
-  top: 78px;
+  top: 65px;
   width: 33%;
   font-size: 12px;
 }
@@ -184,18 +175,18 @@ section {
   position: relative;
   top: 170px;
   width: 33%;
-  left: -81px;
+  left: 0px;
   font-size: 12px;
 }
 .Receita {
   position: relative;
   top: 277px;
   width: 33%;
-  left: -84px;
+  left: 5px;
   font-size: 12px;
 }
 .Alface {
-  top: -142px;
+  top: -150px;
   width: 33%;
   font-size: 12px;
   position: relative;

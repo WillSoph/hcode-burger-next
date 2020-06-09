@@ -19,9 +19,9 @@ export default function Menumobile() {
                 </div>
                 <ul>
                     <li><Link href="/"><a>HOME</a></Link></li>
-                    <li><a href="#">QUEM SOMOS</a></li>
-                    <li><a href="#">CARDÁPIO</a></li>
-                    <li><Link href="/offers"><a>CONTATO</a></Link></li>
+                    <li><a href="/about-us">QUEM SOMOS</a></li>
+                    <li><a href="/cardapio">CARDÁPIO</a></li>
+                    <li><Link href="/contact"><a>CONTATO</a></Link></li>
                 </ul>
             </div>
 

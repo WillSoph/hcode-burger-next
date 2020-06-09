@@ -21,7 +21,7 @@
   }
   
 .header{
-    /* background-image: url(../public/assets/images/background-mobile-about-us.png); */
+    background-image: url(../public/assets/images/background-mobile-about-us.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;

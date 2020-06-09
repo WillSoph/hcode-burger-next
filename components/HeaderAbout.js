@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import LinkItem from './LinkItem'
 import Menu from './MenuMobile'
-import styles from './Header.module.css'
+import styles from './HeaderAbout.module.css'
 // import './Headercode'
 
 
 
-export default function Header(props) {
+export default function HeaderAbout(props) {
 
     const LinkMenu = (itens) => (
         <li>
@@ -35,10 +35,10 @@ export default function Header(props) {
                     </div>
                     <div className={styles['redes-nav']}>
                         <div className={styles['net-nav']}>
-                            <a href=""> <img src="assets/images/003-whatsapp.svg" className="whatsapp" alt="Whatsapp" /></a>
-                            <a href=""> <img src="assets/images/001-facebook.svg" className="facebook" alt="Facebook" /></a>
-                            <a href=""> <img src="assets/images/011-instagram.svg" className="Instagram" alt="Instagram" /></a>
-                            <a href=""> <img src="assets/images/013-twitter-1.svg" className="Twitter" alt="Twitter" /></a>
+                            <a href=""> <img src="assets/images/003-whatsapp.svg" alt="Whatsapp" /></a>
+                            <a href=""> <img src="assets/images/001-facebook.svg" alt="Facebook" /></a>
+                            <a href=""> <img src="assets/images/011-instagram.svg" alt="Instagram" /></a>
+                            <a href=""> <img src="assets/images/013-twitter-1.svg" alt="Twitter" /></a>
                         </div>
                     </div>
                     <div>
@@ -51,19 +51,13 @@ export default function Header(props) {
 
                 </nav>
 
-                <div className='burguer'>
-                    <div>
-                        <img src="assets/images/hamburguer-desktop.png" alt="Burger-Bacon" />
-                    </div>
-                    <div className={styles.text}>
-                        <h2>NOVO</h2>
-                        <hr></hr>
-                        <h1 className={styles.bacon}>BACON</h1>
-                        <h3>LOVERS</h3>
-                        <p>Deliciosas fatias de bacon com queijo cheddar, alface,
-                    tomate e nosso hamburguer de picanha com bacon com o tempero secreto do chefHat</p>
+                <div className={styles.hamburguer}>
 
-                    </div>
+                    <h1 className={styles.h1}>
+                        EM BUSCA DO <br></br>
+                        <b>#HAMBURGUER PERFEITO</b>
+                    </h1>
+
                 </div>
             </header>
         </>

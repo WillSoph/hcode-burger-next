@@ -40,10 +40,10 @@ export default function Footer() {
 
                 <nav className={styles['menu-footer']}>
                     <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Sobre nós</a></li>
-                        <li><a href="">Cardápio</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/about-us">Sobre nós</a></li>
+                        <li><a href="/cardapio">Cardápio</a></li>
+                        <li><a href="/contact">Contato</a></li>
                     </ul>
 
                     <p>©2020, Hcode Red Team. Todos os direitos reservados</p>

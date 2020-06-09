@@ -6,7 +6,19 @@
   font-family: "light";
   src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
 }
-
+.header {
+  background-image: url(../public/assets/images/background-index-banner-mobile.png);
+  height: 800px;
+}
+.bacon {
+  color: #e83c2e;
+  font-family: "h1";
+  margin: 0;
+  font-size: 65pt;
+}
+.hamburguer b{
+  color: #e83c2e;
+  }
 /* * {
   box-sizing: border-box;
   padding: 0%;
