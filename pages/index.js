@@ -3,12 +3,12 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <Head>
         <title>HCode Burger</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       <Header />
