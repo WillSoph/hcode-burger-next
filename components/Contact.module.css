@@ -1,0 +1,135 @@
+.header{
+    background-image: url(../public/assets/images/background-contact-dektop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+}
+
+.hamburguer {
+    margin-top: 200px;
+  }
+  .hamburguer h1 {
+    color: white;
+    margin-left: 50px;
+  }
+  .hamburguer b {
+    color: yellow;
+  }
+.duvidas{
+    text-align: center;
+    background-color: black;
+
+}
+.duvidas h2{
+    color: white;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 34px;
+}
+  .formulario {
+      background-image: url(../public/assets/images/background-contact.png);
+      height: auto;
+      background-size: cover;
+      position: relative;
+      top: -2px;
+      display: flex;
+  }
+
+  .burguer{
+    position: relative;
+    left: -11%;
+    margin-top: 50px;
+  }
+  .burguer img{
+      max-width: 100%;
+  }
+  .form{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #nome, 
+  #email,
+  #numero{
+      width: 85%;
+      margin: 25px;
+      height: 45px;
+      text-align: center;
+  }
+  #mensagem{
+      text-align: center;
+    width: 85%;
+    margin: 25px;
+    height: 230px;
+  }
+  .btn{
+      background-color: #fbbb1d;
+    width: 25%;
+    height: 35px;
+    border: none;
+  }
+
+.flex{
+    display: flex;
+    margin: 0 70px;
+}
+.telefone-chef{
+    width: 50%;
+    text-align: center;
+}
+.telefone-chef h4,
+.email-chef h4{
+    color: red;
+    font-size: 15px;
+    margin: 25px 0 0;
+}
+.telefone-chef h5,
+.email-chef h5{
+    font-size: 20pt;
+    margin: 10px;
+
+}
+
+.email-chef{
+    text-align: center;
+    width: 25%;
+}
+.onions {
+ text-align: end;
+}
+.onions img{
+    max-width: 60%;
+}
+.outros h4{
+    font-size: 39pt;
+    margin: 35px 0 0 65px;
+    color: red;
+}
+ @media(max-width: 1000px){
+
+.duvidas h2{
+    width: 95%;
+}
+    .burguer{
+        display: none;
+    }
+
+    .outros{
+        text-align: center;
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .telefone-chef,
+    .email-chef,
+    .onions{
+    text-align: center;
+        flex:  300px;
+    
+    }
+
+  }
