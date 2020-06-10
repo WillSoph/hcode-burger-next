@@ -47,19 +47,18 @@ export default function Contact() {
                     <div className={styles.burguer}>
                         <img src="assets/images/hamburguer-melted.png" alt="" />
                     </div>
-                    <form className={styles.form} action="">
+                    <form onSubmit={handleFormSubmit} className={styles.form} action="">
+
+                        <input type="text" name="name" id={styles.nome} placeholder="Como se chama?" onChange={handleImputChange} onFocus={handleImputChange} />
 
 
-                        <input type="text" name="Nome" id={styles.nome} placeholder="Como se chama?" />
+                        <input type="email" name="email" id={styles.email} placeholder="Email por favor" onChange={handleImputChange} onFocus={handleImputChange} />
 
 
-                        <input type="email" name="Email" id={styles.email} placeholder="Email por favor" />
+                        <input type="text" name="phone" id={styles.numero} placeholder="Ligamos pra onde ?" onChange={handleImputChange} onFocus={handleImputChange} />
 
 
-                        <input type="text" name="Numero" id={styles.numero} placeholder="Ligamos pra onde ?" />
-
-
-                        <input type="text" name="Mensagem" id={styles.mensagem} placeholder="pode falar" />
+                        <input name="message" id={styles.mensagem} placeholder="pode falar" onChange={handleImputChange} onFocus={handleImputChange}></input>
 
                         <button type="submit" className={styles.btn}>Enviar</button>
 
