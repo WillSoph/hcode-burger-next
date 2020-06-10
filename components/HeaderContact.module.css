@@ -1,11 +1,23 @@
-.header{
+@font-face {
+    font-family: "h1";
+    src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+  }
+  @font-face {
+    font-family: "light";
+    src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
+  }
+  
+  /* * {
+    box-sizing: border-box;
+    padding: 0%;
+  } */
+  .header{
     background-image: url(../public/assets/images/background-contact-dektop.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     background-position: bottom;
 }
-
 .hamburguer {
     margin-top: 200px;
   }
@@ -16,120 +28,144 @@
   .hamburguer b {
     color: yellow;
   }
-.duvidas{
-    text-align: center;
-    background-color: black;
-
-}
-.duvidas h2{
-    color: white;
-    margin: 0 auto;
-    width: 50%;
-    font-size: 34px;
-}
-  .formulario {
-      background-image: url(../public/assets/images/background-contact.png);
-      height: auto;
-      background-size: cover;
-      position: relative;
-      top: -2px;
-      display: flex;
+  .body {
+    padding: 0%;
+    margin: 0%;
   }
-
-  .burguer{
-    position: relative;
-    left: -11%;
-    margin-top: 50px;
-  }
-  .burguer img{
-      max-width: 100%;
-  }
-  .form{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #nome, 
-  #email,
-  #numero{
-      width: 85%;
-      margin: 25px;
-      height: 45px;
-      text-align: center;
-  }
-  #mensagem{
-      text-align: center;
-    width: 85%;
-    margin: 25px;
-    height: 230px;
-  }
-  .btn{
-      background-color: #fbbb1d;
-    width: 25%;
-    height: 35px;
-    border: none;
-  }
-
-.flex{
+  
+  .menu{
     display: flex;
-    margin: 0 70px;
-}
-.telefone-chef{
-    width: 50%;
-    text-align: center;
-}
-.telefone-chef h4,
-.email-chef h4{
+    justify-content: space-between;
+  }
+ .menu ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    width: 40%;
+  }
+  .menu li {
+    margin: 20px;
+  }
+  .menu ul a {
+    color: white;
+    text-decoration: none;
+    font-family: "h1";
+  }
+
+  .menu ul a:hover{
     color: red;
-    font-size: 15px;
-    margin: 25px 0 0;
-}
-.telefone-chef h5,
-.email-chef h5{
-    font-size: 20pt;
-    margin: 10px;
-
-}
-
-.email-chef{
-    text-align: center;
+  }
+  .menu img {
+    width: 40px;
+    
+  }
+  
+  .net-nav{
+    display: flex;
+  }
+  .net-nav a{
+    margin: 15px;
+    width: 12%;
+  }
+  .redes-nav{
     width: 25%;
-}
-.onions {
- text-align: end;
-}
-.onions img{
-    max-width: 60%;
-}
-.outros h4{
-    font-size: 39pt;
-    margin: 35px 0 0 65px;
+  }
+  .logo{
+    margin: 0px 260px 0px 77px;
+  }
+  .logo img{
+    width: 100px;
+  }
+  .logo img:hover{
     color: red;
+  }
+  .facebook:hover{
+    background-color: blue;
+    border-radius: 40px;
+  }
+  .whatsapp:hover{
+    background-color: green;
+    border-radius: 40px;
+  }
+  .Instagram:hover{
+   background-color: #be3c96;
+    border-radius: 40px;
+  }
+  .Twitter:hover{
+    background-color: #32ceff;
+    border-radius: 40px;
+  }
+  #menu-mobile,
+  .x{
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+
+    #menu-mobile{
+      display: block;
+      height: 45px;
+    margin: 25px;
+    }
+    .x{
+      display: block;
+      text-align: end;
+    }    
+    .net-nav{
+      display: none;
+    }
+    .redes-nav{
+      display: none;
+    }
+ 
+    .logo{
+      margin: auto 0 0 10%;
+      width: 90%;
+  
+    }
+   
+.menu li a{
+  display: block;
+  margin: 35px;
+  
 }
- @media(max-width: 1000px){
 
-.duvidas h2{
-    width: 95%;
+.menu ul {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -80vw;
+  width: 80vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 2;
+  margin: 0;
+  transition: right .2s ;
+  text-align: center;
 }
-    .burguer{
-        display: none;
-    }
 
-    .outros{
-        text-align: center;
-    }
+.menu.open ul{
+  right: 0;
+}
+.menu.open a {
+  color: blue;
+  display: block;
+}
 
-    .flex{
-        display: flex;
-        flex-wrap: wrap;
+  }
+  @media (max-width: 640px) {
+
     
+    .logo img{
+      width: 30%;
+      margin: auto;
     }
-    .telefone-chef,
-    .email-chef,
-    .onions{
-    text-align: center;
-        flex:  300px;
-    
+  }
+  @media (max-width: 1000px) {
+
+    .logo{
+      text-align: center;
     }
 
+   
   }

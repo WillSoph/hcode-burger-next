@@ -44,7 +44,7 @@ export default function HeaderContact(props) {
 
                     <div >
                         <button id={styles['menu-mobile']}>
-                            <img src="hcode-burger/images/png-transparent-hamburger-button-computer-icons-menu-menu-rectangle-desktop-wallpaper-button.png" alt="" />
+                            <img src="assets/images/png-transparent-hamburger-button-computer-icons-menu-menu-rectangle-desktop-wallpaper-button.png" alt="" />
                         </button>
                     </div>
 

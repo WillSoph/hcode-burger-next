@@ -3,8 +3,33 @@ import HeaderContact from '../components/HeaderContact'
 import Footer from '../components/Footer'
 import styles from '../components/Contact.module.css'
 
+import React, { useState } from 'react'
+import axios from 'axios'
+import { Cookies } from 'react-cookie'
+
 
 export default function Contact() {
+    const [values, setValues] = useState({ name: '', email: '', phone: '', message: '' })
+
+    const handleImputChange = e => {
+        const { name, value } = e.target
+
+        setValues({ ...values, [name]: value })
+
+    }
+
+    const handleFormSubmit = e => {
+        e.preventDefault()
+
+
+        //axios.post('http://localhost:3333/users', values).then( res => {
+        axios.post('https://hcodelab-hamburgueria.herokuapp.com/faleconosco', values).then(res => {
+
+            alert(`Ola ${res.data.name} seus dados cadastrados com sucesso ID: ${res.data.id}`)
+            window.location.href = ("/index") // Redireciona para a pagina login
+        }).catch(err => console.log("Erro de Cadastro", err))
+
+    }
     return (
         <>
             <Head>
@@ -15,7 +40,6 @@ export default function Contact() {
             <HeaderContact />
             <section>
                 <div className={styles.duvidas}>
-
                     <h2>Compartilhe suas dúvidas, sugestões reclamações ou até mesmo sua receita secreta</h2>
                 </div>
                 <div className={styles.formulario}>
