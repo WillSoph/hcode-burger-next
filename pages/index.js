@@ -8,7 +8,7 @@ export default function Index() {
     <>
       <Head>
         <title>HCode Burger</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-16x16.png" />
       </Head>
 
       <Header />

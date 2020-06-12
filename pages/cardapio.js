@@ -8,7 +8,7 @@ export default function Cardapio() {
         <>
             <Head>
                 <title>HCode Burger - Cardápio</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon-16x16.png" />
             </Head>
 
             <HeaderCardapio />

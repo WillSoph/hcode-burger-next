@@ -43,7 +43,7 @@ export default function Contact() {
         <>
             <Head>
                 <title>HCode Burger - Contato</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon-16x16.png" />
             </Head>
 
             <HeaderContact />

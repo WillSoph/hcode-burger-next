@@ -21,7 +21,7 @@
   }
   
   .header {
-    background-image: url(../public/assets/images/background-cardapio-desktop.png);
+    background-image: url(../public/assets/images/background-register-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -131,7 +131,7 @@
     }
   @media (max-width: 910px) {
     .header {
-      background-image: url(../public/assets/images/background-cardapio-mobile.png);
+      background-image: url(../public/assets/images/background-register-mobile.png);
       background-repeat: no-repeat;
       background-size: cover;
       height: 500px;

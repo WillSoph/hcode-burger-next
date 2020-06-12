@@ -47,7 +47,7 @@ export default function Register(props) {
         <>
             <Head>
                 <title>HCode Burger - Registre-se</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon-16x16.png" />
             </Head>
             <HeaderRegister />
             <section>
@@ -62,7 +62,7 @@ export default function Register(props) {
 
                         <input type="text" name="name" id={styles.nome} placeholder="Como se chama?" onChange={handleImputChange} onFocus={handleImputChange} />
 
-                        <input type="text" name="birth_at" id={styles.email} placeholder="Sua data de Aniversário" onChange={handleImputChange} onFocus={handleImputChange} />
+                        <input type="date" name="birth_at" id={styles.email} placeholder="Sua data de Aniversário" onChange={handleImputChange} onFocus={handleImputChange} />
 
                         <input type="email" name="email" id={styles.email} placeholder="Email por favor" onChange={handleImputChange} onFocus={handleImputChange} />
 
