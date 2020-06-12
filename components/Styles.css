@@ -1,9 +1,21 @@
 * {
   box-sizing: border-box;
   padding: 0%;
-  margin: 0;
 }
-
+body {
+  padding: 0%;
+  margin: 0%;
+}
+header {
+  background-image: url(../public/assets/images/background-index-banner-mobile.png);
+  height: 800px;
+}
+h1 {
+  color: #e83c2e;
+  font-family: "h1";
+  margin: 0;
+  font-size: 65pt;
+}
 hr {
   height: 5px;
   width: 35%;
@@ -11,13 +23,13 @@ hr {
   margin: 0;
 }
 .burguer {
-  margin: 80px 0 0 35px;
+  margin: 80px 0 0;
   display: flex;
 }
 
 h2 {
   color: white;
-  /* font-family: "h1"; */
+  font-family: "h1";
   font-size: 40pt;
   margin: 0 0 21px;
 }
@@ -55,7 +67,7 @@ p {
   src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
 }
 
-section {
+.section {
   width: 100%;
   height: auto;
 }
@@ -113,7 +125,7 @@ section {
   background-image: url(../public/assets/images/background-merged-black.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 813px;
+  height: 710px;
 }
 .amostra {
   width: 100%;
@@ -167,7 +179,7 @@ section {
 }
 .Pao {
   position: relative;
-  top: 65px;
+  top: 78px;
   width: 33%;
   font-size: 12px;
 }
@@ -175,18 +187,18 @@ section {
   position: relative;
   top: 170px;
   width: 33%;
-  left: 0px;
+  left: -81px;
   font-size: 12px;
 }
 .Receita {
   position: relative;
   top: 277px;
   width: 33%;
-  left: 5px;
+  left: -84px;
   font-size: 12px;
 }
 .Alface {
-  top: -150px;
+  top: -142px;
   width: 33%;
   font-size: 12px;
   position: relative;
@@ -238,42 +250,7 @@ section {
   color: red;
 }
 @media (max-width: 640px) {
-  .text {
-    text-align: center;
-  }
-  .text p {
-    display: none;
-  }
-
-  h1 {
-    color: #e83c2e;
-    font-family: "h1";
-    margin: 0;
-    font-size: 28pt;
-  }
-  hr {
-    height: 5px;
-    width: 35%;
-    background: white;
-    margin: 0 auto;
-  }
-
-  h2 {
-    color: white;
-    font-family: "h1";
-    font-size: 18pt;
-    margin: 0 0 21px;
-  }
-  h3 {
-    color: #fbbb1d;
-    font-family: "h1";
-    font-size: 3em;
-    margin: 0;
-  }
-  .burguer {
-    display: block;
-    margin: auto;
-  }
+  
   .primeira-parte {
     display: block;
   }
@@ -304,7 +281,98 @@ section {
   }
 
 }
+@media (max-width: 700px) {
+
+  .text {
+    text-align: center;
+  }
+  .text p {
+    display: none;
+  }
+
+  hr {
+    height: 5px;
+    width: 15%;
+    background: white;
+    margin: 0 auto;
+  }
+ 
+  .burguer {
+    display: block;
+    margin: auto;
+  }
+
+}
+
 @media (max-width: 1200px) {
+
+  #menu-mobile{
+    display: block;
+    height: 45px;
+  margin: 25px;
+  }
+  .x{
+    display: block;
+    text-align: end;
+  }    
+  .net-nav{
+    display: none;
+  }
+  .redes-nav{
+    display: none;
+  }
+
+  .logo{
+    margin: auto 0 0 10%;
+    width: 90%;
+
+  }
+ 
+.menu li a{
+display: block;
+margin: 35px;
+
+}
+
+.menu ul {
+display: block;
+position: fixed;
+top: 0;
+right: -80vw;
+width: 80vw;
+height: 100vh;
+background-color: white;
+z-index: 2;
+margin: 0;
+transition: right .2s ;
+text-align: center;
+}
+
+.menu.open ul{
+right: 0;
+}
+.menu.open a {
+color: blue;
+display: block;
+}
+
+
+@media (max-width: 640px) {
+
+  
+  .logo img{
+    width: 30%;
+    margin: auto;
+  }
+}
+@media (max-width: 1000px) {
+
+  .logo{
+    text-align: center;
+  }
+
+ 
+}
   .Pao ,
   .Produtos ,
   .Receita ,

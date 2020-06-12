@@ -1,38 +1,38 @@
 @font-face {
-    font-family: "h1";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
-  }
-  @font-face {
-    font-family: "light";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
-  }
-  
-  @font-face {
-    font-family: "Regular";
-    src: url(../public/assets/fonts/BebasNeue/BebasNeue-Regular.otf);
-  }
-  @font-face {
-    font-family: "Monts";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
-  }
-  @font-face {
-    font-family: "Medium";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
-  }
-  
+  font-family: "h1";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "light";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(../public/assets/fonts/BebasNeue/BebasNeue-Regular.otf);
+}
+@font-face {
+  font-family: "Monts";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Medium";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
 .header{
-    background-image: url(../public/assets/images/background-mobile-about-us.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    background-position: bottom;
+  background-image: url(../public/assets/images/background-desktop-about-us.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: bottom;
 }
 .hamburguer{
-    margin-top: 200px;
+  margin-top: 200px;
 }
 .hamburguer h1{
-   color: white;
-   margin-left: 50px;
+ color: white;
+ margin-left: 50px;
 }
 .hamburguer b{
 color: yellow;
@@ -40,126 +40,133 @@ color: yellow;
 
 
 .section {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+}
+.primeira-parte {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
+}
+.corte {
+  width: 50%;
+  position: relative;
+  right: 10%;
+}
+.corte img {
+  max-width: 130%;
+}
+.chef {
+  width: auto;
+}
+.chef h2 {
+  color: black;
+}
+.chef h3 {
+  color: black;
+  font-size: 23px;
+}
+.chef p {
+  color: black;
+  font-family: "light";
+  font-size: 20px;
+}
+.btn {
+  text-align: center;
+}
+.btn button {
+  width: 30%;
+  height: 50px;
+  background-color: #fbbb1d;
+  border: none;
+}
+.btn button a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 15px;
+}
+.btn button:hover{
+  background-color: #a57909;
+}
+.chef1 img {
+  width: 100%;
+}
+.galeria{
+  background-image: url(../public/assets/images/background-page-black-mobile-sobre.png);
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  bottom: -2px;
+}
+
+.text{
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+.text h2{
+  color: yellow;
+  font-family: "Medium";
+  font-size: 2em;
+}
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: 90px auto 0;
+}
+.fotos > div{
+  flex: 200px;
+  margin: 10px;
+}
+.fotos img{
+  max-width: 100%;
+}
+
+
+
+
+
+
+@media (max-width: 640px) {
+
   .primeira-parte {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 5%;
+    display: block;
   }
+
   .corte {
+    float: left;
     width: 50%;
     position: relative;
-    right: 10%;
-  }
-  .corte img {
-    max-width: 130%;
-  }
-  .chef {
-    width: auto;
-  }
-  .chef h2 {
-    color: black;
-  }
-  .chef h3 {
-    color: black;
-    font-size: 23px;
+    right: 28%;
   }
   .chef p {
     color: black;
     font-family: "light";
-    font-size: 20px;
-  }
-  .btn {
+    font-size: 8pt;
     text-align: center;
-  }
-  .btn button {
-    width: 30%;
-    height: 50px;
-    background-color: #fbbb1d;
-    border: none;
-  }
-  .btn button a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    padding: 15px;
-  }
-  .btn button:hover{
-    background-color: #a57909;
   }
   .chef1 img {
     width: 100%;
+    margin-top: 40px;
   }
-.galeria{
-    background-image: url(../public/assets/images/background-page-black-mobile-sobre.png);
-    height: auto;
-    width: 100%;
+
+}
+@media (max-width: 910px) {
+ 
+  .header{
+    background-image: url(../public/assets/images/background-mobile-about-us.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    bottom: -2px;
+    height: 500px;
+    background-position: bottom;
 }
 
-.text{
-    text-align: center;
-    position: relative;
-    top: 60px;
-}
-.text h2{
-    color: yellow;
-    font-family: "Medium";
-    font-size: 2em;
-}
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 95%;
-    margin: 90px auto 0;
-}
-.fotos > div{
-    flex: 200px;
-    margin: 10px;
-}
-.fotos img{
-    max-width: 100%;
-}
-
-
-
-
-
-
-  @media (max-width: 640px) {
-  
-    .primeira-parte {
-      display: block;
-    }
-  
-    .corte {
-      float: left;
-      width: 50%;
-      position: relative;
-      right: 28%;
-    }
-    .chef p {
-      color: black;
-      font-family: "light";
-      font-size: 8pt;
-      text-align: center;
-    }
-    .chef1 img {
-      width: 100%;
-      margin-top: 40px;
-    }
-  
+  .fotos > div{
+      flex: 100px;
+      margin: 10px;
   }
-  @media (max-width: 910px) {
-   
-
-    .fotos > div{
-        flex: 100px;
-        margin: 10px;
-    }
-  }
+}

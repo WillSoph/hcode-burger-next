@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className={styles['flex-footer']}>
 
                     <div className={styles['Logo-footer']}>
-                        <img src="assets/logo/ChefHat.svg" alt="Logo do Chefe" />
+                        <img src="assets/logo/hcode-burger-logo-white.svg" alt="Logo do Chefe" />
 
                     </div>
 
@@ -40,8 +40,8 @@ export default function Footer() {
 
                 <nav className={styles['menu-footer']}>
                     <ul>
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/about-us">Sobre nós</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">Quem Somos</a></li>
                         <li><a href="/cardapio">Cardápio</a></li>
                         <li><a href="/contact">Contato</a></li>
                     </ul>

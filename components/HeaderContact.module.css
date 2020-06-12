@@ -22,6 +22,7 @@
     margin-top: 200px;
   }
   .hamburguer h1 {
+    font-size: 3vw;
     color: white;
     margin-left: 50px;
   }
@@ -103,7 +104,7 @@
   @media (max-width: 1200px) {
 
     #menu-mobile{
-      display: block;
+      display: contents;
       height: 45px;
     margin: 25px;
     }

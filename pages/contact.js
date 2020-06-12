@@ -9,6 +9,15 @@ import { Cookies } from 'react-cookie'
 
 
 export default function Contact() {
+
+    const LinkMenu = (itens) => (
+        <li>
+            <Link href={itens.link}>
+                <a title={itens.label}>{itens.label}</a>
+            </Link>
+        </li>
+    );
+
     const [values, setValues] = useState({ name: '', email: '', phone: '', message: '' })
 
     const handleImputChange = e => {
@@ -40,7 +49,7 @@ export default function Contact() {
             <HeaderContact />
             <section>
                 <div className={styles.duvidas}>
-                    <h2>Compartilhe suas dúvidas, sugestões reclamações ou até mesmo sua receita secreta</h2>
+                    <h2>Compartilhe suas dúvidas, sugestões, reclamações ou até mesmo sua receita secreta</h2>
                 </div>
                 <div className={styles.formulario}>
 
@@ -82,7 +91,7 @@ export default function Contact() {
                     <div className={styles['email-chef']}>
                         <h4>Email:</h4>
                         <h5>customer@chefhat.com</h5>
-                        <h5>sugetion@chefhat.com</h5>
+                        <h5>suggestion@chefhat.com</h5>
                     </div>
 
                     <div className={styles.onions}>

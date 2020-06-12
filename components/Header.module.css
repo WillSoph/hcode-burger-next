@@ -6,28 +6,15 @@
   font-family: "light";
   src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
 }
-.header {
-  background-image: url(../public/assets/images/background-index-banner-mobile.png);
-  height: 800px;
-}
-.bacon {
-  color: #e83c2e;
-  font-family: "h1";
-  margin: 0;
-  font-size: 65pt;
-}
-.hamburguer b{
-  color: #e83c2e;
-  }
+
 /* * {
   box-sizing: border-box;
   padding: 0%;
 } */
-/* .body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} */
+.body {
+  padding: 0%;
+  margin: 0%;
+}
 
 .menu{
   display: flex;
@@ -98,9 +85,10 @@
 
 @media (max-width: 1200px) {
 
-
   #menu-mobile{
-    display: block;
+    display: contents;
+    height: 45px;
+  margin: 25px;
   }
   .x{
     display: block;
@@ -129,7 +117,7 @@ margin: 35px;
 display: block;
 position: fixed;
 top: 0;
-right: 0;
+right: -80vw;
 width: 80vw;
 height: 100vh;
 background-color: white;
@@ -139,17 +127,15 @@ transition: right .2s ;
 text-align: center;
 }
 
-.menu ul{
-right: -80vw;
+.menu.open ul{
+right: 0;
 }
-.menu a {
+.menu.open a {
 color: blue;
 display: block;
-z-index: 3;
 }
 
 }
-
 @media (max-width: 640px) {
 
   

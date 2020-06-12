@@ -2,8 +2,7 @@ import Link from 'next/link'
 import LinkItem from './LinkItem'
 import Menu from './MenuMobile'
 import styles from './HeaderAbout.module.css'
-// import './Headercode'
-
+import HeaderTopo from './HeaderTopo'
 
 
 export default function HeaderAbout(props) {
@@ -22,34 +21,7 @@ export default function HeaderAbout(props) {
                 <Menu />
             </div>
             <header className={styles.header}>
-                <nav className={styles.menu}>
-                    <ul>
-
-                        {LinkItem.map(item => (
-                            <LinkMenu key={item.id} link={item.link} label={item.label} />
-                        ))
-                        }
-                    </ul>
-                    <div className={styles.logo}>
-                        <img src="assets/logo/ChefHat.svg" alt="Logo do Chefe" />
-                    </div>
-                    <div className={styles['redes-nav']}>
-                        <div className={styles['net-nav']}>
-                            <a href=""> <img src="assets/images/003-whatsapp.svg" className={styles.whatsapp} alt="Whatsapp" /></a>
-                            <a href=""> <img src="assets/images/001-facebook.svg" className={styles.facebook} alt="Facebook" /></a>
-                            <a href=""> <img src="assets/images/011-instagram.svg" className={styles.Instagram} alt="Instagram" /></a>
-                            <a href=""> <img src="assets/images/013-twitter-1.svg" className={styles.Twitter} alt="Twitter" /></a>
-                        </div>
-                    </div>
-                    <div>
-                        {/* <button id={styles['menu-mobile']} >
-
-                        <img src="assets/images/png-transparent-hamburger-button-computer-icons-menu-menu-rectangle-desktop-wallpaper-button.png" alt="" />
-                    </button> */}
-
-                    </div>
-
-                </nav>
+                <HeaderTopo />
 
                 <div className={styles.hamburguer}>
 
