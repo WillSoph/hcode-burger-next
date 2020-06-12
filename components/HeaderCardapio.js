@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import LinkItem from './LinkItem'
 import Menu from './MenuMobile'
-import styles from './HeaderAbout.module.css'
+import styles from './HeaderCardapio.module.css'
 import HeaderTopo from './HeaderTopo'
 
 
-export default function HeaderAbout(props) {
+export default function HeaderCardapio(props) {
 
     const LinkMenu = (itens) => (
         <li>

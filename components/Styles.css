@@ -126,7 +126,7 @@ p {
   background-image: url(../public/assets/images/background-merged-black.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 710px;
+  height: 800px;
 }
 .amostra {
   width: 100%;
@@ -180,7 +180,7 @@ p {
 }
 .Pao {
   position: relative;
-  top: 78px;
+  top: 65px;
   width: 33%;
   font-size: 12px;
 }
@@ -199,7 +199,7 @@ p {
   font-size: 12px;
 }
 .Alface {
-  top: -142px;
+  top: -150px;
   width: 33%;
   font-size: 12px;
   position: relative;
@@ -251,6 +251,13 @@ p {
   color: red;
 }
 @media (max-width: 640px) {
+
+  h2 {
+    color: white;
+    font-family: "h1";
+    font-size: 5vw;
+    margin: 0 0 21px;
+  }
   
   .primeira-parte {
     display: block;
@@ -425,6 +432,7 @@ display: block;
     background-size: cover;
     display: block;
     width: 100%;
+    height: auto;
   }
   .produtos-mobile img {
     display: block;
@@ -450,7 +458,8 @@ display: block;
   .Queijos ,
   .Maioneses {
     margin: auto;
-    width: 100%;  
+    width: 100%; 
+    margin-top: 2vh; 
   }
 
 .entrega{

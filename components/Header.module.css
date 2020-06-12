@@ -136,6 +136,15 @@ display: block;
 }
 
 }
+.modal {
+  margin: 5vh 5vw;
+  padding: 1vh 1vw;
+  cursor: pointer;
+  background-color: #fbbb1d;
+  color: black;
+  border: none;
+  
+}
 @media (max-width: 640px) {
 
   
