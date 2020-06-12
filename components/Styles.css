@@ -36,7 +36,7 @@ h2 {
 h3 {
   color: #fbbb1d;
   font-family: "h1";
-  font-size: 7em;
+  font-size: 5em;
   margin: 0;
 }
 p {
@@ -71,6 +71,7 @@ p {
   width: 100%;
   height: auto;
 }
+
 .primeira-parte {
   display: flex;
   justify-content: flex-end;
@@ -254,6 +255,9 @@ p {
   .primeira-parte {
     display: block;
   }
+  .footer nav {
+    display: none;
+  }
 
   .corte {
     float: left;
@@ -282,6 +286,9 @@ p {
 
 }
 @media (max-width: 700px) {
+  .footer nav {
+    display: none;
+  }
 
   .text {
     text-align: center;
@@ -305,6 +312,9 @@ p {
 }
 
 @media (max-width: 1200px) {
+  .footer nav {
+    display: none;
+  }
 
   #menu-mobile{
     display: block;
@@ -358,7 +368,9 @@ display: block;
 
 
 @media (max-width: 640px) {
-
+  .footer nav {
+    display: none;
+  }
   
   .logo img{
     width: 30%;
@@ -366,6 +378,9 @@ display: block;
   }
 }
 @media (max-width: 1000px) {
+  .footer nav {
+    display: none;
+  }
 
   .logo{
     text-align: center;

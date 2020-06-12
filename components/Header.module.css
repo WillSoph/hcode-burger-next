@@ -44,7 +44,7 @@
 }
 
 .net-nav{
-  display: flex;
+  display: none;
 }
 .net-nav a{
   margin: 15px;
