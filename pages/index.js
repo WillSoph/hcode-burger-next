@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Menu from '../components/MenuMobile'
+import HeaderTopo from '../components/HeaderTopo'
 
 
 export default function Index() {
@@ -10,6 +12,10 @@ export default function Index() {
         <title>HCode Burger</title>
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
+      <div id='menu-mobile'>
+        <Menu />
+      </div>
+      <HeaderTopo />
 
       <Header />
       <section>

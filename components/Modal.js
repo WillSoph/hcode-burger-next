@@ -60,6 +60,7 @@ const Modal = ({ id = "modal", onClose = () => { }, Children }) => {
 
             <button className={ModalStyles.button} type="submit">Conecte-se</button>
 
+
           </div>
 
           <div className={ModalStyles.container}> <style jsx>{`background-color:#f1f1f1`} </style>

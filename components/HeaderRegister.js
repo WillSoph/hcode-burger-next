@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import LinkItem from './LinkItem'
 import Menu from './MenuMobile'
-import styles from './HeaderContact.module.css'
+import styles from './HeaderRegister.module.css'
 import HeaderTopo from './HeaderTopo'
 
 
-
-export default function HeaderContact(props) {
+export default function HeaderRegister(props) {
 
     const LinkMenu = (itens) => (
         <li>
@@ -18,15 +17,8 @@ export default function HeaderContact(props) {
 
     return (
         <>
-            <div id={styles['menu-mobile']}>
-                <Menu />
-            </div>
             <header className={styles.header}>
-                <HeaderTopo />
-
-
                 <div className={styles.hamburguer}>
-
                     <h1>
                         Receba nossas<br></br>
                         <b>#PROMOÇÕES</b>

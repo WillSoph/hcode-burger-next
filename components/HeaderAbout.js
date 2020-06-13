@@ -17,11 +17,7 @@ export default function HeaderAbout(props) {
 
     return (
         <>
-            <div id={styles['menu-mobile']}>
-                <Menu />
-            </div>
             <header className={styles.header}>
-                <HeaderTopo />
 
                 <div className={styles.hamburguer}>
 

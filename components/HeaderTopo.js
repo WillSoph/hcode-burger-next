@@ -37,7 +37,7 @@ export default function HeaderTopo() {
                         <a href=""> <img src="assets/images/013-twitter-1.svg" className={styles.Twitter} alt="Twitter" /></a>
                     </div>
                 </div> */}
-                <div>
+                <div className={styles.restrictButton}>
                     <button className={`${styles.modal} ${styles['menu']}`} onClick={() => setIsModalVisible(true)}><b>Área Restrita</b></button>
                     {isModalVisible ? < Modal onClose={() => setIsModalVisible(false)}>
                     </Modal> : null}

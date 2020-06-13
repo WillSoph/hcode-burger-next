@@ -12,6 +12,7 @@ body {
 header {
   background-image: url(../public/assets/images/background-index-banner-mobile.png);
   height: 800px;
+  display: flex;
 }
 h1 {
   color: #e83c2e;
@@ -327,9 +328,12 @@ p {
   }
 
   #menu-mobile{
-    display: block;
-    height: 45px;
-  margin: 25px;
+    top: -2vh;
+    position: fixed;
+    z-index: 1;
+    /* display: block; */
+    /* height: 45px; */
+  /* margin: 25px; */
   }
   .x{
     display: block;

@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import HeaderAbout from '../components/HeaderAbout'
 import Footer from '../components/Footer'
+import Menu from '../components/MenuMobile'
+import HeaderTopo from '../components/HeaderTopo'
 import styles from '../components/About.module.css'
 
 export default function About() {
@@ -10,12 +12,15 @@ export default function About() {
                 <title>HCode Burger - Quem Somos</title>
                 <link rel="icon" href="/favicon-16x16.png" />
             </Head>
-
+            <div id='menu-mobile'>
+                <Menu />
+            </div>
+            <HeaderTopo />
             <HeaderAbout />
             <section>
                 <div className={styles['primeira-parte']}>
 
-               
+
                     <div className={styles.corte}>
                         <img src="assets/images/hamburguer-about-us.png" alt="hamburguer" />
                     </div>
@@ -25,7 +30,7 @@ export default function About() {
                         <h3> HCODE Burger's Chef</h3><br></br>
 
                         <p> Gabriel Bispo ou "Bispinho", autodidata, transformou a paixão pela cozinha em profissão. Mais do que alguém responsável pela elaboração do cardápio, preparação dos pratos e combinação dos sabores, o chef é a alma da Hcode Burguer. Há sempre um grande chef por trás de um grande restaurante.
-                   </p><br/> 
+                   </p><br />
 
                         <p>Fundada na crença de que todos merecem um lugar onde podem escapar das complicações do mundo atual, HCODE Burger abriu seu primeiro restaurante em 6 de junho de 1996 na icônica Avenida Paulista em São Paulo. Nós nos inspiramos nas cozinhas e cultura de todo o mundo, mantendo-se fiel aos clássicos.
                         </p>
@@ -36,8 +41,8 @@ export default function About() {
                         <img src="assets/images/Chefs-phto-signature.png" alt="Chefe-Bispinho" />
                     </div>
 
-                    </div>
-                
+                </div>
+
 
 
                 <div className={styles.galeria}>

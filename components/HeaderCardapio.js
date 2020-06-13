@@ -17,13 +17,9 @@ export default function HeaderCardapio(props) {
 
     return (
         <>
-            <div id={styles['menu-mobile']}>
-                <Menu />
-            </div>
             <header className={styles.header}>
-                <HeaderTopo />
-                <div className={styles.hamburguer}>
 
+                <div className={styles.hamburguer}>
                     <h1>
                         Nossos Lanches <br></br>
                         <b>#HORADAFOME</b>

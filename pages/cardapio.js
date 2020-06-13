@@ -2,6 +2,8 @@ import Head from 'next/head'
 import HeaderCardapio from '../components/HeaderCardapio'
 import Footer from '../components/Footer'
 import styles from '../components/Cardapio.module.css'
+import Menu from '../components/MenuMobile'
+import HeaderTopo from '../components/HeaderTopo'
 
 export default function Cardapio() {
     return (
@@ -10,6 +12,10 @@ export default function Cardapio() {
                 <title>HCode Burger - Cardápio</title>
                 <link rel="icon" href="/favicon-16x16.png" />
             </Head>
+            <div id='menu-mobile'>
+                <Menu />
+            </div>
+            <HeaderTopo />
 
             <HeaderCardapio />
 

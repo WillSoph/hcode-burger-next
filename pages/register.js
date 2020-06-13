@@ -2,9 +2,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import HeaderRegister from './../components/HeaderRegister'
 import LinkItem from './../components/LinkItem'
-import Menu from './../components/MenuMobile'
 import styles from './../components/Register.module.css'
 import Footer from '../components/Footer'
+import Menu from '../components/MenuMobile'
+import HeaderTopo from '../components/HeaderTopo'
 
 import React, { useState } from 'react'
 import axios from 'axios'
@@ -49,6 +50,10 @@ export default function Register(props) {
                 <title>HCode Burger - Registre-se</title>
                 <link rel="icon" href="/favicon-16x16.png" />
             </Head>
+            <div id='menu-mobile'>
+                <Menu />
+            </div>
+            <HeaderTopo />
             <HeaderRegister />
             <section>
                 <div className={styles.duvidas}>

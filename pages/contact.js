@@ -2,6 +2,8 @@ import Head from 'next/head'
 import HeaderContact from '../components/HeaderContact'
 import Footer from '../components/Footer'
 import styles from '../components/Contact.module.css'
+import Menu from '../components/MenuMobile'
+import HeaderTopo from '../components/HeaderTopo'
 
 import React, { useState } from 'react'
 import axios from 'axios'
@@ -45,6 +47,10 @@ export default function Contact() {
                 <title>HCode Burger - Contato</title>
                 <link rel="icon" href="/favicon-16x16.png" />
             </Head>
+            <div id='menu-mobile'>
+                <Menu />
+            </div>
+            <HeaderTopo />
 
             <HeaderContact />
             <section>
