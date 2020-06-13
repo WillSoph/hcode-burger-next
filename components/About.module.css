@@ -1,90 +1,278 @@
+/* mobile first*/
+
 .header{
-    background-image: url(../public/assets/images/background-mobile-about-us.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    background-position: bottom;
+  background-image: url(../public/assets/images/background-mobile-about-us.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: bottom;
 }
 .hamburguer{
-    margin-top: 200px;
+  margin-top: 200px;
 }
 .hamburguer h1{
-   color: var(--white);
-   margin-left: 50px;
+ color: var(--white);
+ margin-left: 50px;
 }
 .hamburguer b{
 color: var(--yellow);
 }
 
 .section {
-    width: 100%;
-    height: auto;
-    font-family: Montserrat;
-  }
-  .primeira-parte {
-    display: flex;
-    justify-content: flex-end;
-    margin: 3%;
-  }
-  .corte {
-    width: 80%;
-    position: relative;
-    right: 20%;
-  }
-  .corte img {
-    max-width: 150%;
-  }
-  .chef {
-    width: auto;
-  }
-  .chef h2 {
-    color: var(--black);
-    margin: 0;
-    font-weight: 600;
-  }
-  .chef h3 {
-    color: var(--black);
-    font-size: 23px;
-    font-weight: 400;
-    margin-left: 10px;
-  }
-  .chef p {
-    color: var(--black);
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 20px;
-    color: var(--dark);
-  }
-  .btn {
-    text-align: center;
-  }
-  .btn button {
-    width: 30%;
-    height: 50px;
-    background-color: var(--yellow);
-    border: none;
-  }
-  .btn button a {
-    text-decoration: none;
-    color: var(--black);
-    font-size: 18px;
-    padding: 15px;
-  }
-  .btn button:hover{
-    background-color: #a57909;
-  }
-  .chef1 img {
-    width: 25vw;
-  }
+  width: 100%;
+  height: auto;
+  font-family: Montserrat;
+}
+.primeira-parte {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 3%;
+  flex-direction: column-reverse;
+}
+.corte {
+  display: none;
+}
+.corte img {
+  max-width: 150%;
+}
+.chef {
+  width: auto;
+}
+.chef h2 {
+  color: var(--black);
+  margin: 0;
+  font-weight: 600;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+.chef h3 {
+  margin-left: 10px;
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 400;
+  align-items: center;
+}
+.chef p {
+  color: var(--black);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--dark);
+  padding: 3%;
+}
+
+
+
+.btn {
+  text-align: center;
+}
+.btn button {
+  width: 30%;
+  height: 50px;
+  background-color: var(--yellow);
+  border: none;
+}
+.btn button a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 18px;
+  padding: 15px;
+}
+.btn button:hover{
+  background-color: #a57909;
+}
+.chef1 img {
+  width: 70vw;
+}
+
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 90px auto 0;
+}
+.fotos > div{
+  flex: 100px;
+  margin: 10px;
+}
+.fotos img{
+  max-width: 100%;
+}
+
 .galeria{
-    background-image: url(../public/assets/images/background-page-black-mobile-sobre.png);
+  background-image: url(../public/assets/images/background-page-black-mobile-sobre.png);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  bottom: -2px;
+}
+
+.container {
+display: flex;
+position: relative;
+width: 50%;
+}
+
+.image {
+display: block;
+width: 100%;
+height: auto;
+}
+.overlay {
+position: absolute;
+bottom: 100%;
+left: 0;
+right: 0;
+background-color: var(--yellow);
+overflow: hidden;
+width: 100%;
+height:0;
+transition: .5s ease;
+opacity: 80%;
+}
+
+.container:hover .overlay {
+bottom: 0;
+height: 100%;
+}
+
+.hover {
+color: var(--black);
+font-size: 18px;
+font-family: Montserrat;
+font-weight: bold;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+
+.text{
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+.text h2{
+  color: var(--yellow);
+  font-family: Montserrat;
+  font-size: 1.5em;
+}
+
+@media (min-width: 400px) {
+  .fotos > div{
+    flex: 150px;
+    margin: 10px;
+  }
+
+  .hover {
+    font-size: 20px;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  .chef1 img {
+    width: 50vw;
+  }
+
+  .chef h2 {
+    font-size: 50px;
+  }
+
+  .chef h3 {
+    font-size: 25px;
+  }
+
+  .chef p {
+    font-size: 25px;
+  }
+
+  .fotos > div{
+    flex: 100px;
+    margin: 10px;
+  }
+
+  .hover {
+    font-size: 15px;
+  }
+
+  .galeria{
     height: auto;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     bottom: -2px;
+    padding-bottom: 5%;
+  }  
 }
+
+@media (min-width: 1024px) {
+
+  .chef1 img {
+    width: 40vw;
+  }
+
+  .fotos > div{
+    flex: 150px;
+    margin: 10px;
+  }
+
+  .hover {
+    font-size: 20px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+  .header{
+    background-image: url(../public/assets/images/background-desktop-about-us.png);
+    }
+
+  .primeira-parte {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+  }
+  .corte {
+    display: flex;
+    width: 100%;
+    position: relative;
+    right: 15%;
+  }
+ 
+  .chef {
+   text-align: left;
+  }
+  .chef h2 {
+    text-align: left;
+     
+  }
+  .chef h3 {
+    font-size: 23px;
+  }
+
+  .chef p {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .chef1 img {
+    width: 30vw;
+  }
 
 .container {
   display: flex;
@@ -92,112 +280,88 @@ color: var(--yellow);
   width: 50%;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: var(--yellow);
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-  opacity: 80%;
-}
-
-.container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
 .hover {
-  color: var(--black);
   font-size: 30px;
-  font-family: Montserrat;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
-
-.text{
-    text-align: center;
-    position: relative;
-    top: 60px;
-}
 .text h2{
-    color: var(--yellow);
-    font-family: Montserrat;
     font-size: 2em;
 }
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 95%;
-    margin: 90px auto 0;
-}
+
 .fotos > div{
     flex: 200px;
     margin: 10px;
 }
-.fotos img{
-    max-width: 100%;
+
 }
 
-   @media (max-width: 640px) {
+@media (min-width: 1680px) {
+
+  .primeira-parte {
+    margin: 6% 0;
+  }
+
+  .corte {
+    right: 0%;
+  }
+
+  .corte img {
+    width: 80%;
+  }
   
+  .chef1 img {
+    width: 20vw;
+  }
+
+  .text h2 {
+    font-size: 40px;
+  }
+  
+  .fotos > div{
+    flex: 250px;
+    margin: 10px;
+  }
+
+  .hover {
+    font-size: 30px;
+  }
+
+  .chef {
+    text-align: left;
+   }
+   .chef h2 {
+     font-size: 50px;
+      
+   }
+   .chef h3 {
+     font-size: 25px;
+   }
+ 
+   .chef p {
+     font-size: 25px;
+     font-weight: 200;
+   }
+
+   @media (min-width: 1920px) {
+
     .primeira-parte {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 3%;
+      margin: 3% 0;
     }
 
-    .chef h2 {
-      align-items: center;
-      text-align: center;
-    }
-    .chef h3 {
-      color: var(--black);
-      font-size: 23px;
-      font-weight: 400;
-      align-items: center;
-    }
-  
-    .corte {
-      align-items: center;
-      width: 30%;
-      position: center;
-      right: 0; 
-    }
-    .chef p {
-      color: black;
-      font-family: "light";
-      font-size: 8pt;
-      text-align: center;
-    }
     .chef1 img {
-      width: 100%;
-      margin-top: 40px;
+      width: 25vw;
     }
-  
-  }
-  @media (max-width: 9100px) {
-   
 
     .fotos > div{
-        flex: 100px;
-        margin: 10px;
+      flex: 300px;
+      margin: 10px;
     }
-  }
+  
+
+
+
+
+   }
+
+
+}
