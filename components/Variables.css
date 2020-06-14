@@ -16,7 +16,9 @@
     --gray3: #333;
     --gray5: #555;
     --gray6: #666;
-    --grayC: #CCC;
-    --instagram: #be3c96;
-    --twiter: #32ceff;
+    --grayC: rgb(17, 16, 16);
+    --instagram: #3f729b;
+    --twitter: #00aced;
+    --facebook:  #3b5998;
+    --whats: #34af23;
 }

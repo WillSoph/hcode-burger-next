@@ -1,71 +1,237 @@
 .footer {
-    height: 300px;
-    background-color: black;
+  height: 200px;
+  background-color: var(--black);
+  font-family: Montserrat;
+  padding-bottom: 5%;
   }
-  .flex-footer {
-    display: flex;
+
+.flex-footer {
+  display: flex;
+  }
+
+.Logo-footer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 5%;
+}
+
+.Logo-footer img {
+  width: 50%;
+  align-items: center;
+  }
+
+.Endereco h6 {
+    color: var(--yellow);
+    font-size: 15pt;
+    font-weight: bold;
+    margin: 0;
+    }
+  
+.Endereco p {
+    font-weight: 200;
+    font-size: 15px;
+    width: auto;
+    color: var(--white);
+  }
+
+.Endereco {
+    padding: 1%x;
+    margin: 0;
+    height: 30px;
+    text-align: center;
+  }
+
+
+.facebook:hover{
+  background-color: var(--facebook);
+  border-radius: 40px;
+}
+.whatsapp:hover{
+  background-color: var(--whats);
+  border-radius: 40px;
+}
+.Instagram:hover{
+ background-color: var(--instagram);
+  border-radius: 40px;
+}
+.Twitter:hover{
+  background-color: var(--twitter);
+  border-radius: 40px;
+}
+
+
+.redes {
+  width: 25%;
+  padding-top: 50px;
+}
+.redes h6 {
+  color: var(--yellow);
+  font-size: 15pt;
+  margin-bottom: 0;
+  padding: 0;
+  }
+
+
+.net {
+  display: flex;
+}
+.net img {
+  margin: 15px;
+  width: 60%;
+}
+
+
+.footer nav {
+  display: none;
+}
+
+.footer{
+height: auto;
+}
+
+.contato{
+display: none;
+}
+.menu-footer{
+display: none;
+}
+.redes{
+width: 100%;  
+text-align: center;
+margin-bottom: 30px;
+}
+
+.flex-footer {
+display: block;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .footer {
+    height: auto;
     
   }
+
+  .redes h6 {
+    font-size: 30px;
+    padding: 2%;
+  }
+
+  .redes {
+    padding: 3%;
+    margin-top:10vh;
+  }
+
+  .Endereco h6 {
+    font-size: 25pt;
+    
+    }
+
+      
+.Endereco p {
+    font-size: 20px;
+    }
+
+.Endereco {
+    padding: 2%;
+    margin: 0;
+    height: 30px;
+    text-align: center;
+  }
+ 
+}
+
+
+ @media (min-width: 1200px) {
+
+.footer {
+    height: 450px;
+    background-color: var(--black);
+  }
+
+  .flex-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 6vh;
+    margin-right: 40px;
+           
+  }
+
   .Logo-footer {
     width: 25%;
   }
   
   .Logo-footer img {
-    width: 30%;
-    margin: 49px 0 0px 52px;
+    width: 8vw;
+     
   }
-  .facebook:hover{
-    background-color: blue;
+  .facebook:hover{    
     border-radius: 40px;
   }
   .whatsapp:hover{
-    background-color: green;
     border-radius: 40px;
   }
   .Instagram:hover{
-   background-color: #be3c96;
     border-radius: 40px;
   }
   .Twitter:hover{
-    background-color: #32ceff;
     border-radius: 40px;
   }
   
-  .Endereco h6 {
-    color: yellow;
-    font-size: 16pt;
-    margin-bottom: 0;
-  }
-  .Endereco p {
-    width: 38%;
-    color: white;
-  }
+
   .Endereco {
-    text-align: justify;
-    padding-top: 50px;
+    text-align: center;
+    width: 25%;
+    margin-top: 5vh;
+     }
+
+  .Endereco h6 {     
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
   }
+
+  .Endereco p {
+    
+  }
+  
   .redes {
     width: 25%;
-    padding-top: 50px;
+    padding:0;
+    margin-top: 1vh;
   }
+
   .redes h6 {
-    color: yellow;
     font-size: 16pt;
     margin-bottom: 0;
     margin-left: 12px;
   }
   
   .contato {
+    display: flex;
+    flex-direction: column;
     width: 25%;
-    padding-top: 50px;
-  }
+    text-align: center;
+    margin-top: 7vh;
+    }
+
+
   .contato h6 {
-    color: yellow;
+    color: var(--yellow);
     font-size: 16pt;
-    margin-bottom: 0;
+    margin: 10px;
+    padding: 0;
+    
   }
   .contato p {
-      color: white;
+      color: var(--white);
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+
   }
   
   .net {
@@ -73,82 +239,63 @@
   }
   .net img {
     margin: 15px;
-    width: 10%;
+    width: 60%;
   }
   
   .footer nav {
     display: flex;
   }
-  .footer .menu-footer ul {
+
+  .contato{
+    display: flex;
+    }
+
+    .menu-footer{
+    display: flex;
+    }
+
+    .menu-footer ul a:hover{
+      color: var(--yellow);
+      border-radius: 40px; 
+    }
+
+    .footer .menu-footer ul {
     list-style: none;
     margin: 0;
+    margin-left: 3vw;
     display: flex;
+    width: 60%;
   }
   .menu-footer li {
-    margin: 20px;
+    margin: 30px;
   }
   .menu-footer ul a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-family: "h1";
   }
   .footer nav p {
-    margin: 20px 199px;
-    width: 36%;
-    color: white;
-  }
-  
-  @media (max-width: 1200px) {
+    font-size: 12px; 
+    width: 30%;
+    color: var(--white);
+    margin-top: 5vh;
+    text-align: right;
+     }
+   }
 
-    .footer nav {
-      display: none;
+
+   
+@media (min-width: 1680px) {
+
+  .footer {
+    height: 480px;
     }
-  
-  .footer{
-    height: auto;
-  }
-  
-  .contato{
-    display: none;
-  }
-  .menu-footer{
-    display: none;
-  }
-  .redes{
-  width: 100%;  
-  text-align: center;
-  }
-  .Endereco
-  {
-  
-    text-align: center;
-  }
-  
-  .Endereco p {
-    width: 80%;
-    color: white;
-    font-size: 10px;
-    margin: auto;
-  }
-  .Logo-footer {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-  }
-  .Logo-footer img{
-      margin: 50px;
-  }
+
+
   .flex-footer {
-    display: block;
-  }
-  .net{
-    width: 60%;
-    margin: auto;
-    justify-content: center;
-  }
+    padding: 1vh;
+    }
+
   
-  }
-  @media (max-width: 640px) {
-  
-      
-  }
+
+}
