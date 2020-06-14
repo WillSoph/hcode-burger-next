@@ -20,7 +20,7 @@
   display: flex;
   /* justify-content: space-between; */
   position: relative;
-  background-color: black;
+  background-color: var(--black);
 }
 .menu ul {
   list-style: none;
@@ -32,13 +32,13 @@
   margin: 20px;
 }
 .menu ul a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-family: "h1";
 }
 
 .menu ul a:hover{
-  color: red;
+  color: var(--yellow);
 }
 .menu img {
   width: 40px;
@@ -62,22 +62,22 @@
   width: 100px;
 }
 .logo img:hover{
-  color: red;
+  color: var(--yellow);
 }
 .facebook:hover{
-  background-color: blue;
+  background-color: var(--facebook);
   border-radius: 40px;
 }
 .whatsapp:hover{
-  background-color: green;
+  background-color: var(--whats);
   border-radius: 40px;
 }
 .Instagram:hover{
- background-color: #be3c96;
+ background-color: var(--instagram);
   border-radius: 40px;
 }
 .Twitter:hover{
-  background-color: #32ceff;
+  background-color: var(--twitter);
   border-radius: 40px;
 }
 #menu-mobile,

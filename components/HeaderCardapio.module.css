@@ -1,186 +1,138 @@
-@font-face {
-    font-family: "h1";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
-  }
-  @font-face {
-    font-family: "light";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
-  }
+.header{
+  background-image: url(../public/assets/images/background-cardapio-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position: bottom;
+}
+
+.hamburguer{
+  margin-top: 150px;
+}
+.hamburguer h1{
+ color: var(--white);
+ margin-left: 30px;
+ font-family: Montserrat;
+ font-weight: 200;
+ font-size: 30px;
+}
+.hamburguer b{
+color: var(--yellow);
+font-family: Montserrat;
+font-weight: 400;
+font-size: 30px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  width: 40%;
+}
+.menu li {
+  margin: 20px;
+}
+.menu ul a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: "h1";
+}
+
+.menu ul a:hover{
+  color: var(--red);
+}
+.menu img {
+  width: 40px;
   
-  @font-face {
-    font-family: "Regular";
-    src: url(../public/assets/fonts/BebasNeue/BebasNeue-Regular.otf);
-  }
-  @font-face {
-    font-family: "Monts";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
-  }
-  @font-face {
-    font-family: "Medium";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
-  }
-  
-  .header {
-    background-image: url(../public/assets/images/background-cardapio-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    background-position: bottom;
-  }
-  .hamburguer {
-    margin-top: 200px;
-  }
-  .hamburguer h1 {
-    color: white;
-    font-size: 4vw;
-    margin-left: 50px;
-  }
-  .hamburguer b {
-    color: yellow;
-  }
-  
-  .section {
-    width: 100%;
-  }
-  .sub-text h2 {
-    text-align: center;
-    color: red;
-    margin: 50px auto;
-  }
-  .sub-text b {
-    color: #737373;
-  }
-  .burguer {
-    display: flex;
-  }
-  .text h2 {
-    color: black;
-    font-family: "h1";
-    font-size: 2em;
-    margin: 90px 0 0px;
-  }
-  .text h3 {
-    color: red;
-    font-family: "h1";
-    font-size: 3em;
-    margin: 0;
-  }
-  .text p {
-    color: black;
-    font-family: "h1";
-  }
-  .burguer img {
-    max-width: 100%;
-  }
-  .cardapio {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 60px 0;
-  }
-  .cardapio img {
-    max-width: 55%;
-  }
-  .cardapio h3 {
-    color: red;
-    font-size: 27pt;
-    margin-bottom: 5px;
-  }
-  .cardapio p {
-    width: 70%;
-    margin: auto;
-  }
-  .cardapio > div {
-    flex: 400px;
-    margin: 20px;
-    text-align: center;
-  }
-  .acompanhamentos {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .acompanhamentos img {
-      text-align: center;
-      max-width: 65%;
-  }
-  .acompanhamentos > div {
-      flex: 300px;
-      margin: 20px;
-      text-align: center;
-    }
-    .acompanhamentos h3 {
-      color: red;
-      font-size: 27pt;
-      margin-bottom: 5px;
-    }
-    .combo{
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .combo h3{
-        font-size: 29pt;
-        margin: auto;
-    }
-    .combo b{
-        color: red;
-        
-      font-size: 100px;
-    }
-    .combo img{
-        max-width: 80%;
-    }
-    #menu-mobile,
+}
+
+.net-nav{
+  display: none;
+}
+.net-nav a{
+  margin: 15px;
+  width: 12%;
+}
+.redes-nav{
+  width: 25%;
+}
+.logo{
+  margin: 0px 260px 0px 77px;
+}
+.logo img{
+  width: 100px;
+}
+.logo img:hover{
+  color: var(--red);
+}
+.facebook:hover{
+  background-color: var(--blue);
+  border-radius: 40px;
+}
+.whatsapp:hover{
+  background-color: var(--green);
+  border-radius: 40px;
+}
+.Instagram:hover{
+ background-color: var(--instagram);
+  border-radius: 40px;
+}
+.Twitter:hover{
+  background-color: var(--twitter);
+  border-radius: 40px;
+}
+#menu-mobile,
 .x{
   display: none;
 }
-@media (max-width: 1200px) {
 
-  #menu-mobile{
-    display: contents;
-    height: 45px;
-  margin: 25px;
-  }
-  .x{
-    display: block;
-    text-align: end;
-  }    
-  .net-nav{
-    display: none;
-  }
-  .redes-nav{
-    display: none;
+
+
+@media (min-width: 768px) {
+
+  .header{
+    background-image: url(../public/assets/images/background-cardapio-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-position: bottom;
   }
 
-  .logo{
-    margin: auto 0 0 10%;
-    width: 90%;
-
+  .hamburguer{
+    margin-top: 250px;
   }
+  .hamburguer h1{
+   margin-left: 40px;
+   font-size: 40px;
+  }
+  .hamburguer b{
+  font-size: 40px;
+  }
+
 }
-  @media (max-width: 910px) {
-    .header {
-      background-image: url(../public/assets/images/background-cardapio-mobile.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 500px;
-      background-position: bottom;
-    }
-    .burguer {
-      display: block;
-      margin: auto;
-      text-align: center;
-    }
-    .text h2 {
-      margin: auto;
-    }
-    .cardapio {
-      margin: 150px 0;
-    }
-  
-    .text p {
-      color: black;
-      font-family: "h1";
-      width: 95%;
-      margin: auto;
-    }
+
+
+@media (min-width: 1670px) {
+  .header {
+    background-size: cover;
+    height: 600px;
+    background-position: bottom;
   }
+
+  .hamburguer{
+    margin-top: 400px;
+  }
+  .hamburguer h1{
+   margin-left: 60px;
+   font-size: 50px;
+  }
+  .hamburguer b{
+  font-size: 50px;
+  }
+
+
+}

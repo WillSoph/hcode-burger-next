@@ -27,7 +27,7 @@ export default function HeaderTopo() {
                     }
                 </ul>
                 <div className={styles.logo}>
-                    <img src="assets/logo/hcode-burger-logo-white.svg" alt="Logo do Chefe" />
+                    <a href="/"><img src="assets/logo/hcode-burger-logo-white.svg" alt="Logo do Chefe" /></a>
                 </div>
                 {/* <div className={styles['redes-nav']}>
                     <div className={styles['net-nav']}>
