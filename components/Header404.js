@@ -20,10 +20,10 @@ export default function HeaderAbout(props) {
             <header className={styles.header}>
                 <div className={styles.error}>
 
-                    <h1>
+                    <h2>
                         PEDIDO NÃO ENCONTRADO<br></br>
                         <b>#ERROR 404</b>
-                    </h1>
+                    </h2>
 
                 </div>
             </header>
