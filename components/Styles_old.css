@@ -1,0 +1,484 @@
+@import './Montserrat.css';
+@import './Variables.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+}
+body {
+  padding: 0%;
+  margin: 0%;
+}
+header {
+  background-image: url(../public/assets/images/background-index-banner-mobile.png);
+  height: 800px;
+  display: flex;
+}
+h1 {
+  color: #e83c2e;
+  font-family: "h1";
+  margin: 0;
+  font-size: 65pt;
+}
+hr {
+  height: 5px;
+  width: 35%;
+  background: white;
+  margin: 0;
+}
+.burguer {
+  margin: 80px 0 0;
+  display: flex;
+}
+
+h2 {
+  color: white;
+  font-family: "h1";
+  font-size: 40pt;
+  margin: 0 0 21px;
+}
+h3 {
+  color: #fbbb1d;
+  font-family: "h1";
+  font-size: 5em;
+  margin: 0;
+}
+p {
+  color: white;
+  font-family: "h1";
+  width: 95%;
+}
+.burguer img {
+  max-width: 100%;
+}
+
+/*section*/
+@font-face {
+  font-family: "h1";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "light";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(../public/assets/fonts/BebasNeue/BebasNeue-Regular.otf);
+}
+@font-face {
+  font-family: "Monts";
+  src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+.section {
+  width: 100%;
+  height: auto;
+}
+
+.primeira-parte {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
+}
+.corte {
+  width: 50%;
+  position: relative;
+  right: 10%;
+}
+.corte img {
+  max-width: 130%;
+}
+.chef {
+  width: auto;
+}
+.chef h2 {
+  color: black;
+}
+.chef h3 {
+  color: black;
+  font-size: 23px;
+}
+.chef p {
+  color: black;
+  font-family: "light";
+  font-size: 20px;
+}
+.btn {
+  text-align: center;
+}
+.btn button {
+  width: 30%;
+  height: 50px;
+  background-color: #fbbb1d;
+  border: none;
+}
+.btn button a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 15px;
+}
+.btn button:hover{
+  background-color: #a57909;
+}
+.chef1 img {
+  width: 100%;
+}
+.segunda-parte {
+  text-align: center;
+  background-image: url(../public/assets/images/background-merged-black.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+.amostra {
+  width: 100%;
+  margin-top: 100px;
+}
+.amostra img {
+  width: 50%;
+}
+.produtos-mobile img {
+  display: none;
+}
+.segunda-parte h3 {
+  font-family: "h1";
+  font-size: 2em;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  top: 60px;
+  color: white;
+}
+.segunda-parte b {
+  color: #a7bc1e;
+}
+.Pao p,
+.Produtos p,
+.Receita p,
+.Alface p,
+.Queijos p,
+.Maioneses p {
+  margin: 0;
+  font-family: "Monts";
+}
+.Pao h5,
+.Produtos h5,
+.Receita h5 ,
+.Alface h5,
+.Queijos h5,
+.Maioneses h5 {
+  color: white;
+  font-size: 35px;
+  margin: 0;
+  font-family: "Regular";
+}
+.Pao b,
+.Produtos b,
+.Receita b,
+.Alface b,
+.Queijos b,
+.Maioneses b  {
+  color: #e83c2e;
+}
+.Pao {
+  position: relative;
+  top: 65px;
+  width: 33%;
+  font-size: 12px;
+}
+.Produtos {
+  position: relative;
+  top: 170px;
+  width: 33%;
+  left: -81px;
+  font-size: 12px;
+}
+.Receita {
+  position: relative;
+  top: 277px;
+  width: 33%;
+  left: -84px;
+  font-size: 12px;
+}
+.Alface {
+  top: -150px;
+  width: 33%;
+  font-size: 12px;
+  position: relative;
+  margin-left: auto;
+}
+.Queijos {
+  top: -51px;
+  width: 33%;
+  font-size: 12px;
+  position: relative;
+  margin-left: auto;
+}
+.Maioneses {
+  top: 63px;
+  width: 33%;
+  font-size: 12px;
+  position: relative;
+  margin-left: auto;
+  right: 8px;
+}
+.entrega {
+  display: flex;
+  width: 99%;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.horas h5,
+.dias h5 {
+  color: red;
+  font-family: "Regular";
+  font-size: 30pt;
+  margin: 0;
+  margin: 10px;
+}
+.horas p,
+.dias p {
+  color: black;
+  margin: 10px;
+  width: 50%;
+}
+.horas img {
+  margin: 10px;
+}
+.dias img {
+  max-width: 90%;
+}
+.dias b {
+  color: red;
+}
+@media (max-width: 640px) {
+
+  h2 {
+    color: white;
+    font-family: "h1";
+    font-size: 5vw;
+    margin: 0 0 21px;
+  }
+  
+  .primeira-parte {
+    display: block;
+  }
+  .footer nav {
+    display: none;
+  }
+
+  .corte {
+    float: left;
+    width: 50%;
+    position: relative;
+    right: 28%;
+  }
+  .chef p {
+    color: black;
+    font-family: "light";
+    font-size: 8pt;
+    text-align: center;
+  }
+  .chef1 img {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .produtos-mobile img {
+    display: block;
+  }
+  
+
+  .entrega{
+    text-align: center;
+  }
+
+}
+@media (max-width: 700px) {
+  .footer nav {
+    display: none;
+  }
+
+  .text {
+    text-align: center;
+  }
+  .text p {
+    display: none;
+  }
+
+  hr {
+    height: 5px;
+    width: 15%;
+    background: white;
+    margin: 0 auto;
+  }
+ 
+  .burguer {
+    display: block;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .footer nav {
+    display: none;
+  }
+
+  #menu-mobile{
+    top: -2vh;
+    position: absolute;
+    z-index: 1;
+    /* display: block; */
+    /* height: 45px; */
+  /* margin: 25px; */
+  }
+  .x{
+    display: block;
+    text-align: end;
+  }    
+  .net-nav{
+    display: none;
+  }
+  .redes-nav{
+    display: none;
+  }
+
+  .logo{
+    margin: auto 0 0 10%;
+    width: 90%;
+
+  }
+ 
+.menu li a{
+display: block;
+margin: 35px;
+
+}
+
+.menu ul {
+display: block;
+position: fixed;
+top: 0;
+right: -80vw;
+width: 80vw;
+height: 100vh;
+background-color: white;
+z-index: 2;
+margin: 0;
+transition: right .2s ;
+text-align: center;
+}
+
+.menu.open ul{
+right: 0;
+}
+.menu.open a {
+color: blue;
+display: block;
+}
+
+
+@media (max-width: 640px) {
+  .footer nav {
+    display: none;
+  }
+  
+  .logo img{
+    width: 30%;
+    margin: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .footer nav {
+    display: none;
+  }
+
+  .logo{
+    text-align: center;
+  }
+
+ 
+}
+  .Pao ,
+  .Produtos ,
+  .Receita ,
+  .Alface ,
+  .Queijos ,
+  .Maioneses {
+    margin: auto;
+    width: 50%;
+    position: relative;
+    left: 0;
+    top: 85px;
+  }
+  .Pao h5 ,
+  .Produtos h5,
+  .Receita h5,
+  .Alface h5,
+  .Queijos h5,
+  .Maioneses h5 {
+    font-size: 22px;
+  }
+  .Pao p,
+  .Produtos p ,
+  .Receita p ,
+  .Alface  p,
+  .Queijos p,
+  .Maioneses p {
+    font-size: 8pt;
+    font-family: "Monts";
+    width: 61%;
+    margin: auto;
+  }
+  .segunda-parte {
+    background-image: url(../public/assets/images/background-page-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .produtos-mobile img {
+    display: block;
+  }
+  .produtos-mobile img {
+    max-width: 50%;
+    position: relative;
+    left: -25%;
+    top: -265px;
+  } 
+.conatiner{
+  text-align: center;
+  position: relative;
+  display: block;
+  height: 615px;
+  top: -24px;
+}
+
+  .Pao ,
+  .Produtos ,
+  .Receita ,
+  .Alface ,
+  .Queijos ,
+  .Maioneses {
+    margin: auto;
+    width: 100%; 
+    margin-top: 2vh; 
+  }
+
+.entrega{
+  text-align: center;
+}
+  .horas,
+  .dias{
+    margin: auto;
+  }
+  .horas p,
+  .dias p{
+    margin: auto;
+  }
+
+}

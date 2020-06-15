@@ -26,10 +26,10 @@ export default function Footer() {
                     <div className={styles.redes}>
                         <h6>Redes Sociais</h6>
                         <div className={styles.net}>
-                        <a href="https://web.whatsapp.com/"><img src="assets/images/003-whatsapp.svg" className={styles.whatsapp} alt="Whatsapp" /></a>
-                        <a href="https://www.facebook.com/hcodebr/"><img src="assets/images/001-facebook.svg" className={styles.facebook} alt="Facebook" /></a>
-                        <a href="https://www.instagram.com/hcodebrasil/"><img src="assets/images/011-instagram.svg" className={styles.Instagram} alt="Instagram" /></a>
-                        <a href="https://twitter.com/hcodebr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/images/013-twitter-1.svg" className={styles.Twitter} alt="Twitter" /></a>
+                            <a href="https://web.whatsapp.com/"><img src="assets/images/003-whatsapp.svg" className={styles.whatsapp} alt="Whatsapp" /></a>
+                            <a href="https://www.facebook.com/hcodebr/"><img src="assets/images/001-facebook.svg" className={styles.facebook} alt="Facebook" /></a>
+                            <a href="https://www.instagram.com/hcodebrasil/"><img src="assets/images/011-instagram.svg" className={styles.Instagram} alt="Instagram" /></a>
+                            <a href="https://twitter.com/hcodebr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/images/013-twitter-1.svg" className={styles.Twitter} alt="Twitter" /></a>
                         </div>
                     </div>
 
@@ -43,6 +43,8 @@ export default function Footer() {
                         <li><a href="/about-us">Quem Somos</a></li>
                         <li><a href="/cardapio">Cardápio</a></li>
                         <li><a href="/contact">Contato</a></li>
+                        <li><a href="/contact">Contato</a></li>
+                        <li><a href="/register">Registre-se</a></li>
                     </ul>
 
                     <p>©2020, Hcode Red Team. Todos os direitos reservados</p>
