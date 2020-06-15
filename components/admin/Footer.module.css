@@ -9,7 +9,7 @@
         position: fixed;
         bottom: 0;
         background: none;
-        color:  var(--grayC);
+        color:  gray;
         z-index: 2;
         font-size: 12px;
         transform: rotate(-90deg);

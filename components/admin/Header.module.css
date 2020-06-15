@@ -1,5 +1,5 @@
 .italy {
-    background-image: url(/images/bg-italy.svg);
+    background-image: url(/assets/images/bg-italy.svg);
     background-repeat: repeat-x;
     width: 100%;
     height: 18px;
@@ -32,7 +32,7 @@
 }
 
 #header .menu {
-    background-color: var(--dark);
+    background-color: grey;
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -60,8 +60,8 @@
     flex-direction: column;
     margin-top: 22px;
     padding: 27px 0;
-    border-bottom: 1px solid var(--gray4);
-    border-top: 1px solid var(--gray4);
+    border-bottom: 1px solid rgb(54, 54, 54);
+    border-top: 1px solid rgb(54, 54, 54);
 }
 
 .user-photo {
@@ -70,7 +70,7 @@
 }
 
 .user-info h2, .user-info p {
-    color: var(--white);
+    color: black;
 }
 
 .user-info h2 {
@@ -84,7 +84,7 @@
 }
 
 .user-info a, .links a {
-    color: var(--grayD);
+    color: rgb(212, 209, 209);
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -98,7 +98,7 @@
 
 .links .link {
     align-items: center;
-    border-bottom: 1px solid var(--gray4);
+    border-bottom: 1px solid rgb(231, 229, 229);
 }
 
 .links .link a {
@@ -169,7 +169,7 @@
     }
     #header {
         height: 60px;
-        background-color: var(--white);
+        background-color: white;
     }
     .user-info {
         margin-top: 60px;

@@ -1,5 +1,5 @@
 .content {
-    background-color: var(--grayE);
+    background-color: rgb(155, 155, 155);
     height: 100vh;
     display: block;
     overflow: auto;

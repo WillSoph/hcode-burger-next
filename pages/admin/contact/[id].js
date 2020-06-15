@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import HeaderTitle from '../../../components/admin/HeaderTitle'
 import Card from '../../../components/admin/Card'
 import styles from '../../../components/admin/UserEdit.module.css'
-import Button from '../../../components/admin/Button'
+import Button from '../../../components/admin/ButtonContact'
 import Layout from '../../../components/admin/Layout'
 import axios from 'axios'
 import { Cookies } from 'react-cookie'
@@ -19,10 +19,11 @@ const serverURL = 'https://hcodelab-hamburgueria.herokuapp.com'
 
 export default function Users(props) {
 
-    let date_at = new Date(props.user.birth_at).toISOString().split('T')[0]  //Converte data para YYYY-mm-dd
-
-    const [values, setValues] = useState({name: props.user.name, email: props.user.email, password: props.user.password, 
-                                          birth_at: date_at, level: props.user.level, photo: props.user.photo
+    
+    //let date_at = new Date(props.user.birth_at).toISOString().split('T')[0];  //Converte data para YYYY-mm-dd
+    
+    const [values, setValues] = useState({name: props.user.name, email: props.user.email, 
+        birth_at: props.user.birth_at, phone: props.user.phone
                                         })
     
     let [nameInput, setNameInput] = useState('')                                        
@@ -112,41 +113,12 @@ export default function Users(props) {
 
                         <input type="date" placeholder="Data de Nascimento" defaultValue={values.birth_at} name="birth_at" onBlur={handleInputBlur}/>
 
-                    </form>
-
-                </Card>
-
-                <Card actions={<Button id={props.id} action="savePass" values={values}>Alterar</Button>}>
-
-                    <div className={styles.header}>
-                    
-                        <h2>Senha</h2>
-
-                    </div>
-                    
-                    <form className={styles.form}>
-
-                        <input type="password" placeholder="Senha Atual" onBlur={currentPass} ref= {nameInput => setNameInput(nameInput)}/>
-
-                        <input type="password" placeholder="Nova Senha" onBlur={newPass} ref= {newPassInput => setNewPassInput(newPassInput)} />
-
-                        <input type="password" placeholder="Confirme a Nova Senha" onBlur={confirmPass} name="password" onChange={handleInputBlur} />
+                        <input type="text" placeholder="Telefone" defaultValue={values.phone} name="phone" onBlur={handleInputBlur}/>
 
                     </form>
 
                 </Card>
 
-                <Card actions={<Button>Escolher Foto</Button>}>
-
-                    <div className={styles.header}>
-
-                        <h2>Avatar</h2>
-
-                    </div>
-
-                    <img src="assets/images/user-photo.png" className={styles.avatar} />
-
-                </Card>
 
             </section>
 
@@ -160,7 +132,7 @@ Users.getInitialProps = async ({query}) => {
 
     const {id} = query
     let user = []
-    user = await axios.get(`${serverURL}/admin/users/${id}`, config)
+    user = await axios.get(`${serverURL}/admin/contato/${id}`, config)
     return {
         "user": user.data,
         "id": id

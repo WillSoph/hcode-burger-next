@@ -11,11 +11,11 @@ export default function Button(props) {
         switch (props.action) {
 
             case 'edit':
-                Router.push(`/admin/users/${props.id}`)
+                Router.push(`/admin/cardapio/${props.id}`)
                 break;
             case 'save':
 
-                await  axios.put(`${serverURL}/admin/users/${props.id}`, props.values)
+                await  axios.put(`${serverURL}/admin/cardapio/${props.id}`, props.values)
 
                 console.log('Salvando Alterações')
                 break;

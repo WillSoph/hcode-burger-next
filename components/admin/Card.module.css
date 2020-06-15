@@ -2,7 +2,7 @@
     justify-content: space-between;
     width: 100%;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: grey;
 }
 
 .card-content {
@@ -13,17 +13,17 @@
 
 .actions {
     justify-content: flex-end;
-    background-color: var(--grayF);
+    background-color: gray;
     width: 100%;
     padding: 10px;
 }
 
 .actions button {
     border: none;
-    background: var(--white);
+    background: white;
     text-transform: uppercase;
-    color: var(--green);
-    border: 1px solid var(--green);
+    color: green;
+    border: 1px solid green;
     border-radius: 4px;
     padding: 16px;
 }

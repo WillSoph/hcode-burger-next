@@ -1,7 +1,7 @@
 import HeaderTitle from '../../../components/admin/HeaderTitle'
 import styles from '../../../components/admin/Home.module.css'
 import Card from '../../../components/admin/Card'
-import Button from '../../../components/admin/Button'
+import Button from '../../../components/admin/ButtonCardapio'
 import Layout from '../../../components/admin/Layout'
 import axios from 'axios'
 import { Cookies } from 'react-cookie'
@@ -21,7 +21,7 @@ export default function Index(props) {
     return (
         <Layout>
 
-            <HeaderTitle text="Usuários" />
+            <HeaderTitle text="Cardápio" />
 
             <section className={styles.users}>
 
@@ -33,8 +33,10 @@ export default function Index(props) {
 
                             <div className={styles['user-data']}>
 
-                                <h2>{user.username}</h2>
-
+                                <h2>{user.name}</h2>
+                                <p>{user.description}</p>
+                                <p>{user.price}</p>
+                                <p>{user.photo}</p>
                             </div>
 
                         </div>
@@ -51,7 +53,7 @@ export default function Index(props) {
 
 Index.getInitialProps = async (ctx) => {
     let users =[]
-    users = await axios.get(`${serverURL}/admin/users`, config)
+    users = await axios.get(`${serverURL}/admin/cardapio`, config)
 
     return {
         "users": users.data
