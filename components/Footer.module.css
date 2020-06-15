@@ -45,19 +45,19 @@
 
 .facebook:hover{
   background-color: var(--facebook);
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .whatsapp:hover{
   background-color: var(--whats);
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .Instagram:hover{
  background-color: var(--instagram);
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .Twitter:hover{
   background-color: var(--twitter);
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 
@@ -78,7 +78,7 @@
 }
 .net img {
   margin: 15px;
-  width: 60%;
+  width: 50%;
 }
 
 
@@ -178,7 +178,7 @@ display: block;
     border-radius: 40px;
   }
   .Twitter:hover{
-    border-radius: 40px;
+    border-radius: 20px;
   }
   
 

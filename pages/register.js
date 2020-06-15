@@ -57,7 +57,7 @@ export default function Register(props) {
             <HeaderRegister />
             <section>
                 <div className={styles.duvidas}>
-                    <h2>Fique por dentro dos nossos lançamentos e promoções</h2>
+                    <h2>Fique por dentro dos nossos lançamentos e promoções</h2><br />
                     <h2>Cadastre-se e ganhe <span className={styles.textOrange}>10% de desconto</span> no seu primeiro pedido</h2>
                 </div>
                 <div className={styles.formulario}>
