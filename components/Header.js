@@ -33,7 +33,7 @@ export default function Header(props) {
                         <h1 className={styles.bacon}>BACON</h1>
                         <h3>LOVERS</h3>
                         <p>Deliciosas fatias de bacon com queijo cheddar, alface,
-                    tomate e nosso hambúrguer de picanha com bacon e o tempero secreto do chefHat</p>
+                    tomate e nosso hambúrguer de picanha e o tempero secreto do HCodeBurger</p>
 
                     </div>
                 </div>

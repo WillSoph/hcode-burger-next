@@ -64,14 +64,24 @@ export default function Contact() {
                     </div>
                     <form onSubmit={handleFormSubmit} className={styles.form} action="">
 
-                        <input type="text" name="name" id={styles.nome} placeholder="Como se chama?" onChange={handleImputChange} onFocus={handleImputChange} />
+                        <div className={styles.field}>
+                            <h3>Nome :</h3>
+                        </div>
 
+                        <input type="text" name="name" id={styles.nome} placeholder="Como se chama?" onChange={handleImputChange} onFocus={handleImputChange} />
+                        <div className={styles.field}>
+                            <h3>Email :</h3>
+                        </div>
 
                         <input type="email" name="email" id={styles.email} placeholder="Email por favor" onChange={handleImputChange} onFocus={handleImputChange} />
-
+                        <div className={styles.field}>
+                            <h3>Telefone :</h3>
+                        </div>
 
                         <input type="text" name="phone" id={styles.numero} placeholder="Ligamos pra onde ?" onChange={handleImputChange} onFocus={handleImputChange} />
-
+                        <div className={styles.field}>
+                            <h3>Mensagem :</h3>
+                        </div>
 
                         <input name="message" id={styles.mensagem} placeholder="pode falar" onChange={handleImputChange} onFocus={handleImputChange}></input>
 
@@ -104,6 +114,7 @@ export default function Contact() {
                         <img src="assets/images/onions.png" alt="onions" />
                     </div>
                 </div>
+
 
             </section>
             <Footer />

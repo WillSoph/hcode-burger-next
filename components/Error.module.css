@@ -1,0 +1,57 @@
+.header{
+
+    background-image: url(../public/assets/images/heat-title-error-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+}
+
+.error{
+    margin-top: 200px;
+}
+.error h1{
+   color: white;
+   margin-left: 50px;
+}
+.error b{
+color: yellow;
+}
+
+.section{
+    background-image: url(../public/assets/images/background-error.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    background-position: bottom;
+
+}
+.error-rotas h2{
+    margin: 0 0 0 45px;
+    width: 50%;
+    color: yellow;
+    font-size: 35pt;
+}
+
+
+
+@media (max-width: 910px) {
+   
+     .header {
+      background-image: url(../public/assets/images/head-title-error-mobile.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      background-position: bottom;
+  }
+  .error{
+    text-align: center;
+ }
+ .error-rotas h2 {
+
+    margin: 0 0 0 0;
+    width: 100%;
+    font-size: 23pt;
+    text-align: center;
+ }
+}

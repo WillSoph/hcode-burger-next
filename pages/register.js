@@ -65,13 +65,30 @@ export default function Register(props) {
 
                     <form onSubmit={handleFormSubmit} className={styles.form} action="">
 
+                        <div className={styles.field}>
+                            <h3>Nome:</h3>
+                        </div>
+
+
                         <input type="text" name="name" id={styles.nome} placeholder="Como se chama?" onChange={handleImputChange} onFocus={handleImputChange} />
+
+
+                        <div className={styles.field}>
+                            <h3>Data de Nascimento:</h3>
+                        </div>
 
                         <input type="date" name="birth_at" id={styles.email} placeholder="Sua data de Aniversário" onChange={handleImputChange} onFocus={handleImputChange} />
 
+
+                        <div className={styles.field}>
+                            <h3>Email:</h3>
+                        </div>
+
                         <input type="email" name="email" id={styles.email} placeholder="Email por favor" onChange={handleImputChange} onFocus={handleImputChange} />
 
-
+                        <div className={styles.field}>
+                            <h3>Telefone:</h3>
+                        </div>
                         <input type="text" name="phone" id={styles.numero} placeholder="Ligamos pra onde ?" onChange={handleImputChange} onFocus={handleImputChange} />
 
                         <button type="submit" className={styles.btn}>Enviar</button>
