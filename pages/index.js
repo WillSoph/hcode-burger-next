@@ -27,15 +27,13 @@ export default function Index() {
           </div>
 
           <div className="chef">
-            <h2>NOME DO CHEF</h2>
-            <h3>O CHEF TABLE</h3>
+            <h2>The Bispinho</h2>
+            <h3>HCODE Burger's Chef</h3>
 
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea quia unde libero, beatae deserunt,
-            cum placeat neque tenetur expedita dicta eaque accusamus ut aperiam hic at dignissimos nisi non.
+            <p> Gabriel Bispo ou "Bispinho", autodidata, transformou a paixão pela cozinha em profissão. Mais do que alguém responsável pela elaboração do cardápio, preparação dos pratos e combinação dos sabores, o chef é a alma da Hcode Burguer. 
                     <br></br><br></br>
 
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                facilisis.
+                    Há sempre um grande chef por trás de um grande restaurante...
                 </p>
 
             <div className="btn">
@@ -59,36 +57,30 @@ export default function Index() {
             <div className="Pao">
               <h5>PÃO <b>FRESQUINHO</b> </h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. sapiente eius officia provident tempore
-                ullam soluta odio sint!
+                Pão caseiro assado todo dia especialmente para você, escolha entre um pão macio ou crocante e saboreie nossos lanches
                 </p>
             </div>
             <div className="Produtos">
               <h5>Produtos <b>da Fazenda</b> </h5>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. sapiente eius officia provident tempore
-                    ullam soluta odio sint!</p>
+              <p> Todos os nossos produtos são cultivados em fazendas livre de compostos químicos, produtos frescos e saudáveis sempre</p>
             </div>
 
             <div className="Receita">
               <h5>Receita <b>Secreta</b> </h5>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. sapiente eius officia provident tempore
-                    ullam soluta odio sint!</p>
+              <p> Um pouco disso, daquilo e mais daquele ali também, assim foi criado um mix de temperos para o blend e também empanar nossas carnes</p>
             </div>
 
             <div className="Alface">
               <h5>Alface <b>da Horta</b> </h5>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. sapiente eius officia provident tempore
-                    ullam soluta odio sint!</p>
+              <p> Um dos segredos de um bom hamburguer é usar ingredientes frescos para deixar nossos lanches ainda mais saborosos</p>
             </div>
             <div className="Queijos">
               <h5>QUEIJOS<b> CASEIROS</b></h5>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. sapiente eius officia provident tempore
-                    ullam soluta odio sint!</p>
+              <p> Queijo direto da fazendo para os nossos lanches, acompanhamos todo o processo de fabricação para assegurar a qualidade de nossos lanches</p>
             </div>
             <div className="Maioneses">
               <h5>“THE”<b> MAIONESE</b></h5>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. sapiente eius officia provident tempore
-                    ullam soluta odio sint!</p>
+              <p> Nosso chefe passou anos encontrando a combinação para uma maionese perfeita, se você ja provou, sabe do que estamos falando.</p>
             </div>
 
             <div className="produtos-mobile">
