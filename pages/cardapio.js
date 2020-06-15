@@ -20,6 +20,8 @@ export default function Cardapio() {
             <HeaderCardapio />
 
             <section>
+<div className={styles.backburguer}>
+
                 <div className={styles['sub-text']}>
                     <h2>
                         Encontre o seu lanche preferido
@@ -36,11 +38,12 @@ export default function Cardapio() {
                         <h2>LANÇAMENTO:</h2>
                         <h3>BACON LOVERS</h3>
                         <p>Deliciosas fatias de bacon com queijo cheddar, alface,
-                    tomate e nosso hamburguer de picanha com bacon com o tempero secreto do chefHat</p>
+                        tomate e nosso hamburguer de picanha com bacon com o tempero secreto do Hcode Burger</p>
 
                     </div>
                 </div>
 
+                </div>
 
                 <div className={styles.cardapio}>
 
@@ -48,54 +51,42 @@ export default function Cardapio() {
                         <img src="assets/images/ocean-breeze.png" alt="Cardapio-Ocean Breeze" />
                         <h3>Ocean Breeze</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur esse adipisci
-                            mollitia sunt beatae reprehenderit, earum temporibus quas. Facilis nihil dolor optio doloremque
-                            saepe totam, laborum mollitia vel voluptatibus.
+                            Sinta a brisa do oceano com nosso hamburguer de salmão, tomate, alface e maionese da casa
                 </p>
                     </div>
                     <div>
                         <img src="assets/images/chicken-crispy.png" alt="Cardapio-Chicken Crispye" />
                         <h3>Chicken Crispye</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur esse adipisci
-                            mollitia sunt beatae reprehenderit, earum temporibus quas. Facilis nihil dolor optio doloremque
-                            saepe totam, laborum mollitia vel voluptatibus.
+                            Frango crocante com nossa receita secreta com tomate, alface e maionese especial
                 </p>
                     </div>
                     <div>
                         <img src="assets/images/melted-salad.png" alt=" Cardapio-Melted Salad" />
                         <h3>Melted Salad</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur esse adipisci
-                            mollitia sunt beatae reprehenderit, earum temporibus quas. Facilis nihil dolor optio doloremque
-                            saepe totam, laborum mollitia vel voluptatibus.
+                            Hmabúrguer duplo com camadas de cheddar, tomate, alface e maionese de queijo
                 </p>
                     </div>
                     <div>
                         <img src="assets/images/black-pearl.png" alt="Cardapio-Black pear" />
                         <h3>Black pearl</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur esse adipisci
-                            mollitia sunt beatae reprehenderit, earum temporibus quas. Facilis nihil dolor optio doloremque
-                            saepe totam, laborum mollitia vel voluptatibus.
+                            Hamburguer especial de frango oriental com cebolas caramelizadas, alface, maionese em nosso pão australiano
                 </p>
                     </div>
                     <div>
                         <img src="assets/images/double-double.png" alt="Cardapio-Double Double" />
                         <h3>Double Double</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur esse adipisci
-                            mollitia sunt beatae reprehenderit, earum temporibus quas. Facilis nihil dolor optio doloremque
-                            saepe totam, laborum mollitia vel voluptatibus.
+                            O dobro de tudo, 2x mais carne, 2x mais bacon e 2x mais queijo cheddar
                 </p>
                     </div>
                     <div>
                         <img src="assets/images/monster.png" alt="Cardapio-Monster" />
                         <h3>Monster</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur esse adipisci
-                            mollitia sunt beatae reprehenderit, earum temporibus quas. Facilis nihil dolor optio doloremque
-                            saepe totam, laborum mollitia vel voluptatibus.
+                            Hamburguer duplo de picanha, filé de peito de frango, bacon, cebola, tomate e alface com um molho especial
                 </p>
                     </div>
                 </div>
@@ -112,27 +103,21 @@ export default function Cardapio() {
                         <img src="assets/images/les-fries.png" alt="acompanhamentos-fritas" />
                         <h3>Les Fries</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi culpa non corrupti laborum
-                            blanditiis similique, officiis, molestias est odio harum quisquam qui quos eligendi illo aliquid
-                            veniam architecto. Accusantium!
+                            Batatas produzida e frita na hora. Batatas 100% naturais!!!
                 </p>
                     </div>
                     <div>
                         <img src="assets/images/chicken-bites.png" alt="acompanhamentos-bites" />
                         <h3>Chicken biter</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos accusantium nisi rem vitae at,
-                            repellat minima veniam quo dolore maxime eius corrupti asperiores officiis impedit dolorem, vel
-                            voluptatibus, ducimus architecto!
+                            Pedacinhos de frango empanado em nossa receita secreta e fritos
                 </p>
                     </div>
                     <div>
                         <img src="assets/images/onions.png" alt="acompanhamentos-monster" />
                         <h3>Monster</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis debitis aliquam!
-                            Minima dolorum ullam commodi vitae laboriosam, nemo veniam explicabo sequi modi magni voluptatem
-                            dignissimos deserunt, distinctio quam unde.
+                            Cebola australiana cortada em rodelas empanada em nossa receita secreta
                 </p>
                     </div>
 
