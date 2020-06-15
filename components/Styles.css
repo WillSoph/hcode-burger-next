@@ -324,6 +324,14 @@ p {
 
 
 @media (max-width: 700px) {
+  #menu-mobile{
+    top: -2vh;
+    position: absolute;
+    z-index: 1;
+    /* display: block; */
+    /* height: 45px; */
+  /* margin: 25px; */
+  }
   .text p {
     display: none;
   }
@@ -387,6 +395,14 @@ p {
     font-family: "Monts";
 
     margin: auto;
+  }
+  #menu-mobile{
+    top: -2vh;
+    position: absolute;
+    z-index: 1;
+    /* display: block; */
+    /* height: 45px; */
+  /* margin: 25px; */
   }
   .segunda-parte {
     background-image: url(../public/assets/images/background-page-black.png);
