@@ -1,40 +1,155 @@
-/* @font-face {
-    font-family: "h1";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
-  }
-  @font-face {
-    font-family: "light";
-    src: url(../public/assets/fonts/Montserrat/Montserrat-Light.ttf);
-  } */
-  .header{
-    background-image: url(../public/assets/images/background-contact-dektop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    background-position: bottom;
-}
 
-.hamburguer {
-    margin-top: 200px;
-    font-size: 3vw;
-  }
-  .hamburguer h1 {
-    
-    color: white;
-    margin-left: 50px;
-  }
-  .hamburguer b {
-    color: yellow;
-  }
+ 
 .duvidas{
-    text-align: center;
-    background-color: black;
+  text-align: center;
+  background-color: var(--black);
+  font-family: Montserrat;
+}
+
+.duvidas h2{
+  color: var(--white);
+  margin: 0 auto;
+  width: 80%;
+  font-size: 20px;
+}
+
+.formulario {
+  background-image: url(../public/assets/images/background-contact.png);
+  height: auto;
+  background-size: cover;
+  position: relative;
+  top: -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.burguer{
+position: relative;
+margin-top: 50px;
+width: 80vw;
 
 }
+.burguer img{
+  max-width: 100%;
+}
+
+.form{
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 90%;
+}
+
+#nome, 
+#email,
+#numero{
+  width: 85%;
+  margin: 25px;
+  height: 45px;
+  text-align: center;
+  
+}
+
+#mensagem{
+  text-align: center;
+width: 85%;
+margin: 25px;
+height: 230px;
+}
+
+.btn{
+  background-color: var(--yellow);
+width: 25%;
+height: 35px;
+border: none;
+}
+
+.outros {
+  font-family: Montserrat;
+  color: var(--red);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-size: 40px;
+}
+
+
+.flex{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Montserrat;
+}
+
+.telefone-chef{
+  margin: auto 0; 
+  width: 100%;
+}
+
+.telefone-chef h4,
+.email-chef h4{
+color: var(--red);
+font-size: 30px;
+margin: 25px 0 0;
+}
+
+.telefone-chef h5,
+.email-chef h5{
+font-size: 15pt;
+margin: 10px;
+
+}
+
+.email-chef{
+  margin: auto 0; 
+  width: 100%;
+}
+.onions {
+text-align: center;
+margin: 30px;
+}
+.onions img{
+max-width: 60%;
+}
+
+.field h3{
+color:  var(--yellow);
+font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .duvidas h2{
+    font-weight: 200;
+    padding: 2em;
+  }
+
+  .burguer{    
+    width: 50vw;    
+    }
+
+  
+    .field h3{
+      color:  var(--yellow);
+      font-size: 25px;
+      }
+
+    .onions img{
+        max-width: 40%;
+        }
+}
+
+@media (min-width: 1024px) {
+
 .duvidas h2{
-    color: white;
+    
     margin: 0 auto;
-    width: 50%;
+    padding: 2em;
     font-size: 30px;
 }
   .formulario {
@@ -44,12 +159,14 @@
       position: relative;
       top: -2px;
       display: flex;
+      flex-direction: row;
   }
 
   .burguer{
-    position: relative;
-    left: -11%;
-    margin-top: 50px;
+    position: absolute;
+    left: -30%;
+    margin-top: 20px;
+    width: 100vw;
   }
   .burguer img{
       max-width: 100%;
@@ -58,7 +175,8 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 70%;
+    margin-left: 30%;
+    width: 90%;
   }
   #nome, 
   #email,
@@ -83,7 +201,9 @@
 
 .flex{
     display: flex;
-    margin: 0 70px;
+    flex-direction: row;
+    margin: 3em 0;
+    padding: 0;
 }
 .telefone-chef{
     width: 50%;
@@ -91,14 +211,13 @@
 }
 .telefone-chef h4,
 .email-chef h4{
-    color: red;
-    font-size: 15px;
-    margin: 25px 0 0;
+    font-size: 30px;
+    
 }
 .telefone-chef h5,
 .email-chef h5{
-    font-size: 20pt;
-    margin: 10px;
+    font-size: 15pt;
+    
 
 }
 
@@ -107,73 +226,42 @@
     width: 25%;
 }
 .onions {
- text-align: end;
+  
+ position: relative;
+ margin: 0;
+ padding: 0;
 }
 .onions img{
     max-width: 60%;
 }
 .outros h4{
-    font-size: 39pt;
-    margin: 35px 0 0 65px;
-    color: red;
+    font-size: 40pt;
+    
 }
+
 .field h3{
-  color:  #fbbb1d;
-  font-size: 30px;
+    font-size: 30px;
 }
- @media(max-width: 1000px){
 
-.duvidas h2{
-    width: 95%;
 }
-    .burguer{
-        display: none;
-    }
 
-    .outros{
-        text-align: center;
-    }
 
-    .flex{
-        display: flex;
-        flex-wrap: wrap;
-    
-    }
-    .telefone-chef,
-    .email-chef,
-    .onions{
-    text-align: center;
-        flex:  300px;
-    
-    }
+@media (min-width: 1200px) {
 
-    .form{
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      width: 100%;
-    }
-    .field h3{
-      color:  #fbbb1d;
-      font-size: 20px;
-    }
-    .outros h4{
-      font-size: 39pt;
-     margin: auto;
-      color: red;
+  .burguer{
+    left: -20%;
   }
+
+  .field h3{
+    font-size: 20px;
+}
+
+
+}
+
+@media (min-width: 1920px) {
+  .burguer{
+    left: -15%;
   }
-  @media(max-width: 812px){
-    
-  .flex{
-    display: block;
-  
-    width: 100%;
-    margin: 0;
-  }
-  .telefone-chef,
-  .email-chef{
-  margin: auto 0; 
-  width: 100%;
-  }
+
 }

@@ -106,8 +106,8 @@ export default function Contact() {
 
                     <div className={styles['email-chef']}>
                         <h4>Email:</h4>
-                        <h5>customer@chefhat.com</h5>
-                        <h5>suggestion@chefhat.com</h5>
+                        <h5>customer@hcodeburger.com</h5>
+                        <h5>suggestion@hcodeburger.com</h5>
                     </div>
 
                     <div className={styles.onions}>
