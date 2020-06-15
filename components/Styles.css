@@ -354,8 +354,16 @@ p {
   margin: 5px;
   width: 30%;
 }
-
-
+@media (max-width: 1200px) {
+#menu-mobile{
+  top: -2vh;
+  position: absolute;
+  z-index: 1;
+  /* display: block; */
+  /* height: 45px; */
+/* margin: 25px; */
+}
+}
 
 
 
