@@ -20,28 +20,28 @@ export default function Cardapio() {
             <HeaderCardapio />
 
             <section>
-<div className={styles.backburguer}>
+                <div className={styles.backburguer}>
 
-                <div className={styles['sub-text']}>
-                    <h2>
-                        Encontre o seu lanche preferido
+                    <div className={styles['sub-text']}>
+                        <h2>
+                            Encontre o seu lanche preferido
             </h2>
-                </div>
-
-
-                <div className={styles.burguer}>
-
-                    <div>
-                        <img src="assets/images/hamburguer-desktop.png" alt="Burger-Bacon" />
                     </div>
-                    <div className={styles.text}>
-                        <h2>LANÇAMENTO:</h2>
-                        <h3>BACON LOVERS</h3>
-                        <p>Deliciosas fatias de bacon com queijo cheddar, alface,
-                        tomate e nosso hamburguer de picanha com bacon com o tempero secreto do Hcode Burger</p>
 
+
+                    <div className={styles.burguer}>
+
+                        <div>
+                            <img src="assets/images/hamburguer-desktop.png" alt="Burger-Bacon" />
+                        </div>
+                        <div className={styles.text}>
+                            <h2>LANÇAMENTO:</h2>
+                            <h3>BACON LOVERS</h3>
+                            <p>Deliciosas fatias de bacon com queijo cheddar, alface,
+                        tomate e nosso hambúrguer de picanha com o tempero secreto do Hcode Burger</p>
+
+                        </div>
                     </div>
-                </div>
 
                 </div>
 
